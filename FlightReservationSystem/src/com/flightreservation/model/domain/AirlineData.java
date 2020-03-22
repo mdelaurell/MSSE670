@@ -65,6 +65,20 @@ public class AirlineData {
 	this.country = country; 
 	}
 	
+	public boolean validate() {
+		if (airlineName == null)
+			return false;
+		if (airlineId.length() != 2)
+			return false;
+		if (airlineId == null)
+			return false;		
+		if (country == null)
+				return false;
+			
+		return true;
+	}
+	
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

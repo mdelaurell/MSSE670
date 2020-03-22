@@ -9,6 +9,16 @@ public class Address {
 	private String zipcode;
 	private String type;
 	
+	public Address(String address1, String address2, String city, String state, String zipcode, String type) {
+		this.address1 = address1;
+		this.address2 = address2;
+		this.city = city;
+		this.state = state;
+		this.zipcode = zipcode;
+		this.type = type;
+			
+	}
+	
 	public String getAddress1() {
 		return address1;
 	}
@@ -51,6 +61,21 @@ public class Address {
 	public void setType(String type) {
 		this.type = type;
 	}
+	
+	public boolean validate() {
+		if (address1 == null)
+			return false;
+		if (city == null)
+			return false;
+		if (state == null)
+			return false;
+		if (zipcode == null)
+			return false;
+		return true;
+	}
+	
+// ?????  hashCode override required?
+	
 	
 	//This is a check of the values expected to be completed by the Customer
 	@Override

@@ -71,6 +71,19 @@ public class AirportID {
 	public void setUsername(Address address) {
 		this.address = address;
 	}
+	
+	public boolean validate() {
+		if (airportName == null)
+			return false;
+		if (airportIdent.length() == 4)
+			return false;
+		if (airportIdent == null)
+			return false;
+		return true;
+	}
+	
+	// I have read that it you override the equals() you should also override the hashcode()
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

@@ -58,6 +58,24 @@ public class Reservation {
 		this.bookingStatus = bookingStatus;
 	}
 	
+	public Reservation(String reservationNumer, 
+			String reservationDate,
+			String reservationStatus,
+			String departureDate,
+			String departureTime,
+			String arrivalDate,
+			String arrivalTime,
+			String bookingStatus) {
+		
+		this.reservationNumer =reservationNumer; 
+		this.reservationDate = reservationDate;
+		this.reservationStatus = reservationStatus;
+		this.departureDate = departureDate;
+		this.departureTime = departureTime;
+		this.arrivalDate = arrivalDate;
+		this.arrivalTime = arrivalTime;
+		this.bookingStatus = bookingStatus;
+	}
 	
 	
 	//getters and setters
@@ -240,9 +258,16 @@ public class Reservation {
 	public void setArrivalTime(String arrivalTime) {
 		this.arrivalTime = arrivalTime;
 	}
-		
+
 	
-	
+	public boolean validate() {
+		if (departureDate == null)
+			return false;
+		if (departureTime == null)
+			return false;
+
+		return true;
+	}
 	
 	
 	

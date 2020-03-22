@@ -212,7 +212,6 @@ public class Traveler {
 			return false;
 		if (emailAddress == null)
 			return false;
-
 		return true;
 	}
 

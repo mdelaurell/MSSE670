@@ -20,6 +20,20 @@ public class CreditCard {
 		this.expirationDate = expirationDate;
 	}
 
+	public boolean validate() {
+		if (creditcardnumber == null)
+			return false;
+		if (creditcardnumber.length() == 16)
+			return false;
+		if (expirationDate == null)
+			return false;
+		if (expirationDate.length() == 6)
+			return false;
+
+		return true;
+	}
+	
+	
 	@Override
 	public boolean equals(Object cc) {
 		if (this == cc)
