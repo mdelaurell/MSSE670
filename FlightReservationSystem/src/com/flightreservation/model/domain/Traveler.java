@@ -37,7 +37,7 @@ public class Traveler {
 	 */
 	
 	public Traveler(String username, String password, String firstName, String lastName,
-			Address address, String emailAddress, Reservation reservation) {
+			Address address, String emailAddress, CreditCard creditcard, Reservation reservation) {
 		
 		//From geeksforgeeks.org
 		/* The super keyword in java is a reference variable that is used to refer parent 
@@ -54,20 +54,17 @@ public class Traveler {
 		this.creditcard = creditcard;
 		this.reservation = reservation;
 	}
-	
-	
+		
 	/**
 	 * 
 	 * @param username
 	 * @param password
 	 * @param firstName
 	 * @param lastName
-	 * @param address
 	 * @param emailAddress
-	 * @param creditcard
 	 */
 	
-	public Traveler(String username, String password, String firstName, String LastName,
+	public Traveler(String username, String password, String firstName, String lastName,
 			String emailAddress){
 		this.username = username;
 		this.password = password;

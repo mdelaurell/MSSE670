@@ -4,6 +4,11 @@ public class CreditCard {
 	private String creditcardnumber;
 	private String expirationDate;
 	
+	public CreditCard(String creditcardnumber, String expirationDate) {
+		this.creditcardnumber = creditcardnumber;
+		this.expirationDate = expirationDate;
+	}
+	
 	public String getCreditCardNumber() {
 		return creditcardnumber;
 	}
@@ -23,13 +28,8 @@ public class CreditCard {
 	public boolean validate() {
 		if (creditcardnumber == null)
 			return false;
-		if (creditcardnumber.length() == 16)
-			return false;
 		if (expirationDate == null)
 			return false;
-		if (expirationDate.length() == 6)
-			return false;
-
 		return true;
 	}
 	

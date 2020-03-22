@@ -265,7 +265,6 @@ public class Reservation {
 			return false;
 		if (departureTime == null)
 			return false;
-
 		return true;
 	}
 	

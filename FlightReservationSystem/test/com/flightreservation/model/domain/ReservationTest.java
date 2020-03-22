@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class ReservationTest {
 	
-	private Reservation r1, r2;
+	private Reservation r1, r2, r3;
 	
 	@Test
 
@@ -27,6 +27,17 @@ class ReservationTest {
 		r2 = new Reservation ("reservationDate","reservation Time","reservation Status","departure Date","departure Time", "arrival Date", "arrival Time","booking status");
 		assertFalse("r1 equals r2", r1.equals(r2));
 		System.out.println("testNotEquals PASSED");
+		
+	}
+	
+	@Test
+	
+	public void testValidates() {
+		
+		System.out.println("Starting the Reservation not equals()");
+		r3 = new Reservation ("reservationDate","reservation Time","reservation Status","departure Date","departure Time", "arrival Date", "arrival Time","booking status");
+		assertTrue("r3.validates", r3.validate());
+		System.out.println("testValidates(): PASSED");
 		
 	}
 

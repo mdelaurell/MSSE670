@@ -75,8 +75,6 @@ public class AirportID {
 	public boolean validate() {
 		if (airportName == null)
 			return false;
-		if (airportIdent.length() == 4)
-			return false;
 		if (airportIdent == null)
 			return false;
 		return true;

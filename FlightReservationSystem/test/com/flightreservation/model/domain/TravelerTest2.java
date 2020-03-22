@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class TravelerTest2 {
 	
-		private Traveler t1, t2, t3;
+		private Traveler t1;
 		
 		
 		
