@@ -1,6 +1,13 @@
 package com.flightreservation.model.domain;
 
-public class Address {
+import java.io.Serializable;
+
+public class Address implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3368437786412480282L;
 	
 	private String address1;
 	private String address2;

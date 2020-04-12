@@ -1,6 +1,13 @@
 package com.flightreservation.model.domain;
 
-public class CreditCard {
+import java.io.Serializable;
+
+public class CreditCard implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6249890086108700261L;
+	
 	private String creditcardnumber;
 	private String expirationDate;
 	

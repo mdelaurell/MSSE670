@@ -1,11 +1,19 @@
 package com.flightreservation.model.domain;
 
 import com.flightreservation.model.domain.Reservation;
+
+import java.io.Serializable;
+
 import com.flightreservation.model.domain.Address;
 import com.flightreservation.model.domain.CreditCard;
 
-public class Traveler {
+public class Traveler implements Serializable {
 		
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3883123844111677464L;
+
 	//Traveler Username
 	private String username;
 	

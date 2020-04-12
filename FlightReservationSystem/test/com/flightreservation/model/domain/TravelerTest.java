@@ -1,14 +1,14 @@
 package com.flightreservation.model.domain;
 
 import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Before;
+//import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 class TravelerTest {
 	
-	private Traveler t1, t2, t3;
+	private Traveler t1, t2;
 	
 	
 	

@@ -1,8 +1,16 @@
 package com.flightreservation.model.domain;
 
+import java.io.Serializable;
+
 import com.flightreservation.model.domain.Address;
 
-public class AirportID {
+public class AirportID implements Serializable{
+	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3894248747208329634L;
 	
 	
 	private String airportName;

@@ -1,8 +1,14 @@
 package com.flightreservation.model.domain;
 
-public class AirlineData {
+import java.io.Serializable;
+
+public class AirlineData implements Serializable{
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7870364508421850188L;
 	private String airlineName;
 	private String airlineId;
 	private String country;
@@ -108,15 +114,15 @@ public class AirlineData {
 	
 	@Override
 	public String toString() {
-		return "AirlineData [airlineName =" + airlineName + 
-				", airlineId=" + airlineId + 
-				", country =" + country +
-				 "]";
-	}
-
-	
-
-	
+		StringBuffer strBfr = new StringBuffer();
+		strBfr.append("\nAirline Data:\n");
+		strBfr.append(airlineName);
+		strBfr.append("\n Airline ID: ");
+		strBfr.append(airlineId);
+		strBfr.append("\nCountry: ");
+		strBfr.append(country);
+		return strBfr.toString();
+	}	
 }	
 	
 	

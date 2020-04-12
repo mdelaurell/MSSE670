@@ -1,10 +1,17 @@
 package com.flightreservation.model.domain;
 
 import com.flightreservation.model.domain.AirportID;
+
+import java.io.Serializable;
+
 import com.flightreservation.model.domain.AirlineData;
 
-public class Reservation {
+public class Reservation implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4399034892059544985L;
 	private String reservationNumer;
 	private String reservationDate;
 	private String reservationStatus;

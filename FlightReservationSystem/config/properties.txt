@@ -1,0 +1,9 @@
+#########################
+# Mapping from the Interface to the Implementation
+########################
+
+IAirlineDataSvc = com.flightreservation.model.service.impl.AirlineDataSvcImpl
+IAirportSvc = com.flightreservation.model.service.impl.AirportSvcImpl
+iManageFlightsSvc = com.flightreservation.model.service.impl.ManageFlightsSvcImpl
+IReservationSvc = com.flightreservation.model.service.impl.ReservationSvcImpl
+ITravelerSvc = com.flightreservation.model.service.impl.TravelerSvcImpl
