@@ -10,7 +10,7 @@ public class AirportID implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 3894248747208329634L;
+	private static final long serialVersionUID = 4894248747208329634L;
 	
 	
 	private String airportName;
@@ -22,16 +22,15 @@ public class AirportID implements Serializable{
 		this.airportName = airportName;
 		this.airportIdent = airportIdent;
 		this.address = address;
+
 	}
 	
-	/**
-	 * @param airportName
-	 * @para airportIdent
-	 */
+	
 	public AirportID(String airportName, String airportIdent) {
+
 		this.airportName = airportName;
 		this.airportIdent = airportIdent;
-		
+
 	}
 	
 	//Getter and Setters

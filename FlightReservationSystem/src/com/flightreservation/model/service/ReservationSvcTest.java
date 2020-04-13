@@ -1,4 +1,4 @@
-package com.flightreservation.service;
+package com.flightreservation.model.service;
 
 //import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,11 +6,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.flightreservation.model.business.ServiceLoadException;
+import com.flightreservation.model.domain.AirlineData;
+import com.flightreservation.model.domain.AirportID;
 import com.flightreservation.model.domain.Reservation;
 import com.flightreservation.model.exception.ReservationException;
-//import com.flightreservation.model.domain.Reservation;
-//import com.flightreservation.model.service.IAirportSvc;
-import com.flightreservation.model.service.IReservationSvc;
 import com.flightreservation.model.service.factory.Factory;
 
 import junit.framework.TestCase;
@@ -31,33 +30,30 @@ class ReservationSvcTest extends TestCase {
 	public void testTravelerRervation() {
 		try {
 			res = (IReservationSvc) factory.getService("IReservationSvc");
-			res.TravelerRervation(null);
+			Reservation reserve =new Reservation("00001", "29/03/2020", "Pending", "23-APR-2020", "15:00", "23-APR-2020", "18:00", "Not Purchased");
+			res.TravelerReservation(reserve);
 		} catch (ServiceLoadException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			fail("ServiceLoadException");
-		} catch (ReservationException e1) {
-			e1.printStackTrace();
-			fail("AirportID Exception");
+		}
+		catch (ReservationException e1) {
+			fail("Reservation Exception");
 		}	
 	}
-	
+			
 	@Test
 	public void testGetReservation() {
 		try {
 			res = (IReservationSvc) factory.getService("IReservationSvc");
-			reserve = res.getReservation(0);
-			Reservation res2 = new Reservation("00001", "29/03/2020", "Pending", "23-APR-2020", "15:00", "23-APR-2020", "18:00", "Not Purchased");
-			assertTrue(reserve.equals(res2));
-			assertFalse(reserve == res2);
-			assertEquals(reserve, res2);
+			assertEquals(res.getReservation("00001").getReservationStatus(), "Pending");
 		} catch (ServiceLoadException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			fail("ServiceLoadException");
 		}	
 	}
-	
+	/*
 	@Test
 	public void testSaveReservation() {
 		try {
@@ -119,5 +115,5 @@ class ReservationSvcTest extends TestCase {
 			e.printStackTrace();
 			fail("ServiceLoadException");
 		}	
-	}
+	}*/
 }

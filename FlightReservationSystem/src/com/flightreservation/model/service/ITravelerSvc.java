@@ -5,6 +5,9 @@ import com.flightreservation.model.exception.TravelerException;
 
 public interface ITravelerSvc extends IService{
 	
+	public final String NAME = "ITravelerSvc";
+
+	
 	public void aTraveler(Traveler traveler) throws TravelerException;
 	public Traveler getTraveler(int id);
 	public Traveler updateTraveler(int id);

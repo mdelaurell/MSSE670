@@ -5,7 +5,9 @@ import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
-class ReservationTest {
+import junit.framework.TestCase;
+
+class ReservationTest extends TestCase {
 	
 	private Reservation r1, r2, r3;
 	

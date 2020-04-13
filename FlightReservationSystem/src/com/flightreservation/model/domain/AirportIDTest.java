@@ -5,12 +5,13 @@ import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
-class AirportIDTest {
+import junit.framework.TestCase;
+
+class AirportIDTest extends TestCase {
 
 	private AirportID aid1, aid2, aid3;
 	
 	@Test
-	
 	public void testValidateEquals() {
 		System.out.println("Starting the AirportID equals()");
 		aid1 = new AirportID ("Colorado Springs Airport","KCOS");

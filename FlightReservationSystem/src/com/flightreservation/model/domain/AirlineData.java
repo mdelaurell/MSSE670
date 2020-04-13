@@ -50,7 +50,7 @@ public class AirlineData implements Serializable{
 	 * 
 	 * @param airlineId
 	 */
-	public void setSirlineId(String airlineId ) {
+	public void setAirlineId(String airlineId ) {
 	this.airlineId = airlineId; 
 	}
 	/**

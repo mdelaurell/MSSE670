@@ -1,4 +1,4 @@
-package com.flightreservation.service;
+package com.flightreservation.model.service;
 
 //import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,8 +8,6 @@ import org.junit.jupiter.api.Test;
 import com.flightreservation.model.business.ServiceLoadException;
 import com.flightreservation.model.domain.AirlineData;
 import com.flightreservation.model.exception.AirlineException;
-//import com.flightreservation.model.domain.AirlineData;
-import com.flightreservation.model.service.IAirlineDataSvc;
 //import com.flightreservation.model.service.ITravelerSvc;
 import com.flightreservation.model.service.factory.Factory;
 
@@ -30,8 +28,13 @@ class AirlineDataSvcTest extends TestCase {
 	@Test
 	public void testAnAirline() {
 		try {
-			iads = (IAirlineDataSvc) factory.getService("IAirlineDataSvc");
-			iads.anAirline(null);
+			iads = (IAirlineDataSvc)factory.getService("IAirlineDataSvc");
+			AirlineData airline = new AirlineData("United Airlines","UA","U.S.A");
+//			airline = new AirlineData("Delta Airlines","DA", "U.S.A.");
+//			airline = new AirlineData("American Airlines", "AA", "U.S.A.");
+//			airline = new AirlineData("British Airways", "BA", "U.K.");
+			assertTrue(iads.anAirline(airline));
+			
 		} catch (ServiceLoadException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -42,55 +45,45 @@ class AirlineDataSvcTest extends TestCase {
 		}
 	}
 	
-	
+		
 	@Test
 	public void testGetAirlineData() {
 		try {
 			iads = (IAirlineDataSvc) factory.getService("IAirlineDataSvc");
-			aldata = (IAirlineDataSvc) iads.getAirlineData(0);
-			AirlineData ald = new AirlineData("New Airline","NA","USA");
-			assertTrue(ald.equals(aldata));
-		    assertFalse(ald == aldata);
-		    assertEquals(ald, aldata);
+			
+			assertEquals("United Airlines",iads.getAirlineData("UA").getAirlineName());
 		} catch (ServiceLoadException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 			fail("ServiceLoadExecption");
 		}
-	}
-	
+	}	
 
 	@Test
 	public void testUpdateAirlineData() {
 		try {
 			iads = (IAirlineDataSvc) factory.getService("IAirlineDataSvc");
-			aldata = (IAirlineDataSvc) iads.updateAirlineData(1);
-			AirlineData ald = new AirlineData("Update Airline","UA","United Kingdom");
-			assertTrue(ald.equals(aldata));
-			assertFalse(ald == aldata);
-			assertEquals(ald, aldata);
+			
+			assertEquals("United Airlines",iads.getAirlineData("UA").getAirlineName());
 		} catch (ServiceLoadException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 			fail("ServiceLoadExecption");
 		}
-	}
+	}	
 	
 	@Test
 	public void testRemoveAirlineData(){
 		try {
 			iads = (IAirlineDataSvc) factory.getService("IAirlineDataSvc");
-			aldata = (IAirlineDataSvc) iads.removeAirlineData(2);
-			AirlineData ald = new AirlineData("Remove Airport", "RA", "Germany");
-			assertTrue(ald.equals(aldata));
-		    assertFalse(ald == aldata);
-		    assertEquals(ald, aldata);
+			
+			assertEquals("United Airlines",iads.getAirlineData("UA").getAirlineName());
 		} catch (ServiceLoadException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 			fail("ServiceLoadExecption");
 		}
-	}
+	}	
 
 		
 }

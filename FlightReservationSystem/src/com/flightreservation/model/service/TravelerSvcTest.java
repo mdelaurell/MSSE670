@@ -1,4 +1,4 @@
-package com.flightreservation.service;
+package com.flightreservation.model.service;
 
 //import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,9 +8,6 @@ import org.junit.jupiter.api.Test;
 import com.flightreservation.model.business.ServiceLoadException;
 import com.flightreservation.model.domain.Traveler;
 import com.flightreservation.model.exception.TravelerException;
-//import com.flightreservation.model.domain.Traveler;
-//import com.flightreservation.model.service.IAirportSvc;
-import com.flightreservation.model.service.ITravelerSvc;
 import com.flightreservation.model.service.factory.Factory;
 
 import junit.framework.TestCase;
@@ -48,7 +45,7 @@ class TravelerSvcTest extends TestCase{
 		try {
 			ITravelerSvc itrs = (ITravelerSvc) factory.getService("ITravelerSvc");
 			travel = itrs.getTraveler(0);
-			Traveler trvl = new Traveler("username","password","firstName","lastName","email@address.com");
+			Traveler trvl = new Traveler(0001,"username","password","firstName","lastName","email@address.com");
 			assertTrue(travel.equals(trvl));
 			assertFalse(travel == trvl);
 			assertEquals(travel, trvl);
@@ -65,7 +62,7 @@ class TravelerSvcTest extends TestCase{
 		try {
 			ITravelerSvc itrs = (ITravelerSvc) factory.getService("ITravelerSvc");
 			travel = itrs.updateTraveler(1);
-			Traveler trvl = new Traveler("username","password","firstName","lastName","email@address.com");
+			Traveler trvl = new Traveler(00001,"username","password","firstName","lastName","email@address.com");
 			assertTrue(travel.equals(trvl));
 	    	assertFalse(travel == trvl);
 	    	assertEquals(travel, trvl);
@@ -81,7 +78,7 @@ class TravelerSvcTest extends TestCase{
 		try {
 			ITravelerSvc itrs = (ITravelerSvc) factory.getService("ITravelerSvc");
 			travel = itrs.deleteTraveler(2);
-			Traveler trvl = new Traveler("username","password","firstName","lastName","email@address.com");
+			Traveler trvl = new Traveler(0001, "username","password","firstName","lastName","email@address.com");
 			assertTrue(travel.equals(trvl));
 			assertFalse(travel == trvl);
 			assertEquals(travel, trvl);

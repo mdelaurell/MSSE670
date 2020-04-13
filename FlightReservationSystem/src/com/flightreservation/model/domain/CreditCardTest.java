@@ -5,7 +5,9 @@ import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
-class CreditCardTest {
+import junit.framework.TestCase;
+
+class CreditCardTest extends TestCase {
 	
 	private CreditCard cc1, cc2, cc3;
 

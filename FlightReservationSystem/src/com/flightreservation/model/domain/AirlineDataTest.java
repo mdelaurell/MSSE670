@@ -6,7 +6,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-class AirlineDataTest {
+import junit.framework.TestCase;
+
+class AirlineDataTest extends TestCase{
 
 	private AirlineData airdat1, airdat2, airdat3;
 	

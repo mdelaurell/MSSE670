@@ -7,9 +7,10 @@ public interface IAirlineDataSvc extends IService{
 	
 	public final String NAME = "IAirlineDataSvc";
 	
-	public void anAirline(AirlineData airline) throws AirlineException;
-	public AirlineData getAirlineData(int id);
-	public AirlineData updateAirlineData(int id);
-	public AirlineData removeAirlineData(int id);
+	public boolean anAirline(AirlineData airline) throws AirlineException;
+	public AirlineData getAirlineData(String id);
+	public AirlineData updateAirlineData(String id);
+	public AirlineData removeAirlineData(String id);
+
 
 }

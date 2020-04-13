@@ -5,6 +5,8 @@ import com.flightreservation.model.exception.FlightManagmentException;
 
 public interface IManageFlightsSvc extends IService {
 	
+	public final String NAME = "IManageFlightsSvc";
+	
 	public void ManageFlight(FlightManagement fltmng) throws FlightManagmentException;
 	public FlightManagement getFlight(int id);
 	public FlightManagement updateFlight(int id);

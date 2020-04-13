@@ -14,6 +14,9 @@ public class Traveler implements Serializable {
 	 */
 	private static final long serialVersionUID = 3883123844111677464L;
 
+	//Traveler id
+	private int id;
+	
 	//Traveler Username
 	private String username;
 	
@@ -44,7 +47,7 @@ public class Traveler implements Serializable {
 	 * 
 	 */
 	
-	public Traveler(String username, String password, String firstName, String lastName,
+	public Traveler(int id, String username, String password, String firstName, String lastName,
 			Address address, String emailAddress, CreditCard creditcard, Reservation reservation) {
 		
 		//From geeksforgeeks.org
@@ -53,6 +56,7 @@ public class Traveler implements Serializable {
 		 * Inheritance.
 		 */
 		super();
+		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.firstName = firstName;
@@ -72,8 +76,9 @@ public class Traveler implements Serializable {
 	 * @param emailAddress
 	 */
 	
-	public Traveler(String username, String password, String firstName, String lastName,
+	public Traveler(int id, String username, String password, String firstName, String lastName,
 			String emailAddress){
+		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.firstName = firstName;
@@ -82,6 +87,13 @@ public class Traveler implements Serializable {
 	}
 	
 	//GETTERS
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+	
 	/**
 	 * @return the username
 	 */
@@ -207,6 +219,8 @@ public class Traveler implements Serializable {
 	
 	
 	public boolean validate() {
+		if (id == 0)
+			return false;
 		if (username == null)
 			return false;
 		if (password == null)

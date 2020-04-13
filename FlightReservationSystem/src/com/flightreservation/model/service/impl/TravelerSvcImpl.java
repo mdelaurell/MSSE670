@@ -18,21 +18,21 @@ public class TravelerSvcImpl implements ITravelerSvc{
 	public Traveler getTraveler(int id){
 		// TODO Auto-generated method stub
 		System.out.println("Traveler Service has been enter getTraveler Method");
-		return new Traveler("username","password","firstName","lastName","email@address.com");
+		return new Traveler(id,"username","password","firstName","lastName","email@address.com");
 	}
 
 	@Override
 	public Traveler updateTraveler(int id) {
 		// TODO Auto-generated method stub
 		System.out.println("Traveler Service has been enter updateTraveler Method");
-		return new Traveler("username","password","firstName","lastName","email@address.com");
+		return new Traveler(id ,"username","password","firstName","lastName","email@address.com");
 	}
 
 	@Override
 	public Traveler deleteTraveler(int id) {
 		// TODO Auto-generated method stub
 		System.out.println("Traveler Service has been enter deleteTraveler Method");
-		return new Traveler("username","password","firstName","lastName","email@address.com");
+		return new Traveler(id,"username","password","firstName","lastName","email@address.com");
 	}
 
 }

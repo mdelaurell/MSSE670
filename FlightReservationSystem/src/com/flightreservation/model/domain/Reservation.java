@@ -12,7 +12,7 @@ public class Reservation implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 4399034892059544985L;
-	private String reservationNumer;
+	private String reservationNumber;
 	private String reservationDate;
 	private String reservationStatus;
 	private AirportID departureAirport1;
@@ -32,7 +32,7 @@ public class Reservation implements Serializable {
 	 * @reservation
 	 * 		 a <code>Reservation</code> object
 	 */
-	public Reservation(String reservationNumer, 
+	public Reservation(String reservationNumber, 
 			String reservationDate,
 			String reservationStatus,
 			AirportID departureAirport1,
@@ -47,7 +47,7 @@ public class Reservation implements Serializable {
 			String arrivalTime,
 			String bookingStatus) {
 		super();
-		this.reservationNumer =reservationNumer; 
+		this.reservationNumber =reservationNumber; 
 		this.reservationDate = reservationDate;
 		this.reservationStatus = reservationStatus;
 		//in this case we would want to think of a better way
@@ -74,7 +74,7 @@ public class Reservation implements Serializable {
 			String arrivalTime,
 			String bookingStatus) {
 		
-		this.reservationNumer =reservationNumer; 
+		this.reservationNumber =reservationNumer; 
 		this.reservationDate = reservationDate;
 		this.reservationStatus = reservationStatus;
 		this.departureDate = departureDate;
@@ -95,14 +95,14 @@ public class Reservation implements Serializable {
 	 * @return the reservationNumer
 	 */
 	public String getReservationNumber() {
-		return reservationNumer;
+		return reservationNumber;
 	}
 	/**
 	 * @param reservationNumer
 	 * 			set the reservationNumer
 	 */
 	public void setReservationNumber(String reservationNumer) {
-		this.reservationNumer = reservationNumer;
+		this.reservationNumber = reservationNumer;
 	}
 	
 	/**

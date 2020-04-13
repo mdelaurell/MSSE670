@@ -5,9 +5,11 @@ import com.flightreservation.model.exception.AirportIDException;
 
 public interface IAirportSvc extends IService {
 	
+	public final String NAME = "IAirportSvc";
+	
 	public void anAirport(AirportID arpt)throws AirportIDException;
-	public AirportID getAirport(int id);
-	public AirportID updateAirport(int id);
-	public AirportID removeAirport(int id);
+	public AirportID getAirport(String id);
+	public AirportID updateAirport(String id);
+	public AirportID removeAirport(String id);
 
 }

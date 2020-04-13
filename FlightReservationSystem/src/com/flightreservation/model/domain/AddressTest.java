@@ -3,11 +3,19 @@ package com.flightreservation.model.domain;
 import static org.junit.Assert.*;
 //import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class AddressTest {
+import junit.framework.TestCase;
+
+class AddressTest extends TestCase{
 	
 	private Address address1, address2;
+	
+	@BeforeEach
+	protected void setUp() throws Exception{
+		super.setUp();
+	}
 
 	@Test
 
