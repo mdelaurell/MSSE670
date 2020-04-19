@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 import com.flightreservation.model.domain.AirlineData;
 
-public class Reservation implements Serializable {
+public class Reservation2 implements Serializable {
 	
 	/**
 	 * 
@@ -15,45 +15,43 @@ public class Reservation implements Serializable {
 	private String reservationNumber;
 	private String reservationDate;
 	private String reservationStatus;
-	private String departureAirport1;
-	private String departureAirport2;
-	private String arrivalAirport1;
-	private String arrivalAirport2;
-	private String airline1;
-	private String airline2;
+	private AirportID departureAirport1;
+	private AirportID departureAirport2;
+	private AirportID arrivalAirport1;
+	private AirportID arrivalAirport2;
+	private AirlineData airline1;
+	private AirlineData airline2;
 	private String departureDate;
 	private String departureTime;
 	private String arrivalDate;
 	private String arrivalTime;
 	private String bookingStatus;
-	private Address address;
 	
 	/**
 	 * 
 	 * @reservation
 	 * 		 a <code>Reservation</code> object
 	 */
-/*	public Reservation(
-			String reservationNumber, 
+	public Reservation2(String reservationNumber, 
 			String reservationDate,
 			String reservationStatus,
-			String departureAirport1,
-			String departureAirport2,
-			String arrivalAirport1,
-			String arrivalAirport2,
-			String airline1,
-			String airline2,
+			AirportID departureAirport1,
+			AirportID departureAirport2,
+			AirportID arrivalAirport1,
+			AirportID arrivalAirport2,
+			AirlineData airline1,
+			AirlineData airline2,
 			String departureDate,
 			String departureTime,
 			String arrivalDate,
 			String arrivalTime,
-			String bookingStatus,
-			Address address)
-	{
+			String bookingStatus) {
 		super();
 		this.reservationNumber =reservationNumber; 
 		this.reservationDate = reservationDate;
 		this.reservationStatus = reservationStatus;
+		//in this case we would want to think of a better way
+		// to user our class to allow for multiple airports without the 1, 2 designation
 		this.departureAirport1 = departureAirport1;
 		this.departureAirport2 = departureAirport2;
 		this.arrivalAirport1 = arrivalAirport1;
@@ -65,40 +63,25 @@ public class Reservation implements Serializable {
 		this.arrivalDate = arrivalDate;
 		this.arrivalTime = arrivalTime;
 		this.bookingStatus = bookingStatus;
-		this.address = address;
-	}*/
+	}
 	
-	public Reservation(
-			String reservationNumber, 
+	public Reservation2(String reservationNumer, 
 			String reservationDate,
 			String reservationStatus,
-			String departureAirport1,
-			String departureAirport2,
-			String arrivalAirport1,
-			String arrivalAirport2,
-			String airline1,
-			String airline2,
 			String departureDate,
 			String departureTime,
 			String arrivalDate,
 			String arrivalTime,
 			String bookingStatus) {
 		
-		this.reservationNumber =reservationNumber; 
+		this.reservationNumber =reservationNumer; 
 		this.reservationDate = reservationDate;
 		this.reservationStatus = reservationStatus;
-		this.departureAirport1 = departureAirport1;
-		this.departureAirport2 = departureAirport2;
-		this.arrivalAirport1 = arrivalAirport1;
-		this.arrivalAirport2 = arrivalAirport2;
-		this.airline1 = airline1;
-		this.airline2 = airline2;
 		this.departureDate = departureDate;
 		this.departureTime = departureTime;
 		this.arrivalDate = arrivalDate;
 		this.arrivalTime = arrivalTime;
 		this.bookingStatus = bookingStatus;
-
 	}
 	
 	
@@ -154,14 +137,14 @@ public class Reservation implements Serializable {
 	/**
 	 * @return the departureAirport1
 	 */
-	public String getDepartureAiport1() {
+	public AirportID getDepartureAiport1() {
 		return departureAirport1;
 	}
 	/**
 	 * @param departureAirport1
 	 * 			set the departureAirport1
 	 */
-	public void setDepartureAiport1(String departureAirport1) {
+	public void setDepartureAiport1(AirportID departureAirport1) {
 		this.departureAirport1 = departureAirport1;
 	}
 	
@@ -169,28 +152,28 @@ public class Reservation implements Serializable {
 	/**
 	 * @return the departureAirport2
 	 */
-	public String getDepartureAiport2() {
+	public AirportID getDepartureAiport2() {
 		return departureAirport2;
 	}
 	/**
 	 * @param departureAirport2
 	 * 			set the departureAirport2
 	 */
-	public void setDepartureAiport2(String departureAirport2) {
+	public void setDepartureAiport2(AirportID departureAirport2) {
 		this.departureAirport2 = departureAirport2;
 	}
 	
 	/**
 	 * @return the arrivalAirport1
 	 */
-	public String getArrivalAirport1() {
+	public AirportID getArrivalAirport1() {
 		return arrivalAirport1;
 	}
 	/**
 	 * @param arrivalAirport1
 	 * 			set the arrivalAirport1
 	 */
-	public void setArrivalAirport1(String arrivalAirport1) {
+	public void setArrivalAirport1(AirportID arrivalAirport1) {
 		this.arrivalAirport1 = arrivalAirport1;
 	}
 	
@@ -198,14 +181,14 @@ public class Reservation implements Serializable {
 	/**
 	 * @return the arrivalAirport1
 	 */
-	public String getArrivalAirport2() {
+	public AirportID getArrivalAirport2() {
 		return arrivalAirport1;
 	}
 	/**
 	 * @param arrivalAirport1
 	 * 			set the arrivalAirport1
 	 */
-	public void setArrivalAirport2(String arrivalAirport1) {
+	public void setArrivalAirport2(AirportID arrivalAirport1) {
 		this.arrivalAirport1 = arrivalAirport1;
 	}
 	
@@ -213,14 +196,14 @@ public class Reservation implements Serializable {
 	/**
 	 * @return the airline1
 	 */
-	public String getAirline1() {
+	public AirlineData getAirline1() {
 		return airline1;
 	}
 	/**
 	 * @param airline1
 	 * 			set the airline1
 	 */
-	public void setAirline1(String airline1) {
+	public void setAirline1(AirlineData airline1) {
 		this.airline1 = airline1;
 	}
 	
@@ -302,7 +285,7 @@ public class Reservation implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Reservation rsv = (Reservation) obj;
+		Reservation2 rsv = (Reservation2) obj;
 		if (departureAirport1 == null) {
 			if ( rsv.departureAirport1 != null)
 				return false;

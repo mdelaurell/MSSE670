@@ -14,7 +14,7 @@ public class ReservationSvcImpl implements IReservationSvc{
 
 	@Override
 	public void TravelerReservation(Reservation res) throws ReservationException {
-		// TODO Auto-generated method stub
+		// Create a new reservation and save it to the file - 
 		
 				ObjectOutputStream output = null;
 				try {
@@ -23,13 +23,14 @@ public class ReservationSvcImpl implements IReservationSvc{
 					output.flush();
 					output.close();
 				}catch(IOException e) {
+					e.printStackTrace();
 				}
 					System.out.println("Reservation Service has been enter TravelerReservation Method");
 			}	
 	
 	@Override
 	public Reservation getReservation(String reservationNumber) {
-		// TODO Auto-generated method stub
+		// Get the Reservation Information for Display
 		ObjectInputStream input;
 		Reservation savedRes = null;
 		try {
@@ -60,31 +61,34 @@ public class ReservationSvcImpl implements IReservationSvc{
 
 	@Override
 	public Reservation saveReservation(String reservationNumber) {
-		// TODO Auto-generated method stub
+		// Save reservation to the file
 		System.out.println("Reservation Service has been enter TravelerReservation Method");
-		return new Reservation("00002", "29/03/2020", "Pending", "23-APR-2020", "15:00", "23-APR-2020", "18:00", "Not Purchased");
+		return new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+
 
 	}
 	
 	@Override
 	public Reservation updateReservation(String reservationNumber) {
-		// TODO Auto-generated method stub
+		// Update the reservation
 		System.out.println("Reservation Service has been enter saveReservation Method");
-		return new Reservation("00003", "29/03/2020", "Pending", "23-APR-2020", "15:00", "23-APR-2020", "18:00", "Not Purchased");
+		return new Reservation("00003", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Dublin Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+
 	}
 
 	@Override
 	public Reservation deleteReservation(String reservationNumber) {
-		// TODO Auto-generated method stub
+		// delete the reservation from the file
 		System.out.println("Reservation Service has been enter deleteReservation Method");
-		return new Reservation("00004", "29/03/2020", "Active", "23-Nov-2020", "15:00", "23-Nov-2020", "17:40", "Purchased");
+		return new Reservation("00004", "29/03/2020", "Pending","Edinburgh Airport", "London Gatwick Airport","London Gatwick Airport","Devner International Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+
 	}
 
 	@Override
 	public Reservation purchaseReservation(String reservationNumber) {
-		// TODO Auto-generated method stub
+		// Purchase the reservation by updating the status to purchase.
 		System.out.println("Reservation Service has been enter purchaseReservation Method");
-		return new Reservation("00005", "31/03/2020", "Pending", "30-APR-2020", "16:00", "30-APR-2020", "18:30", "Flight Cancelled");
+		return new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
 	}
 
 }

@@ -23,7 +23,9 @@ class ReservationMgrTest extends TestCase {
 		super.setUp();
 		factory = new Factory();
 		
-		res = new Reservation("00001", "29/03/2020", "Pending", "23-APR-2020", "15:00", "23-APR-2020", "18:00", "Not Purchased");
+		res = new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+
+		
 		id = res.getReservationNumber();
 		
 	}

@@ -30,7 +30,8 @@ class ReservationSvcTest extends TestCase {
 	public void testTravelerRervation() {
 		try {
 			res = (IReservationSvc) factory.getService("IReservationSvc");
-			Reservation reserve =new Reservation("00001", "29/03/2020", "Pending", "23-APR-2020", "15:00", "23-APR-2020", "18:00", "Not Purchased");
+			Reservation reserve =new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+
 			res.TravelerReservation(reserve);
 		} catch (ServiceLoadException e) {
 			// TODO Auto-generated catch block

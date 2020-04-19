@@ -29,7 +29,8 @@ class TravelerSvcTest extends TestCase{
 	public void aTraveler() {
 		try {
 			itrs = (ITravelerSvc) factory.getService("ITravelerSvc");
-			itrs.aTraveler(null);
+			Traveler trvlr = new Traveler(23, "username", "password", "firstName", "lastname", "email@email.com");
+			itrs.aTraveler(trvlr);
 		} catch (ServiceLoadException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

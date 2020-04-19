@@ -1,0 +1,612 @@
+”code”,”name”,”elevation_ft”,”iso_country”
+”FVHA”,”Robert Gabriel Mugabe International Airport”,4887,”ZW”
+”FLLS”,”Kenneth Kaunda International Airport Lusaka”,3779,”ZM”
+”FACT”,”Cape Town International Airport”,151,”ZA”
+”FAGG”,”George Airport”,648,”ZA”
+”FALE”,”King Shaka International Airport”,295,”ZA”
+”JNB”,”O R Tambo International”,5558,”ZA”
+”FAJS”,”OR Tambo International Airport”,5558,”ZA”
+”FAOR”,”OR Tambo International Airport”,5558,”ZA”
+”BKPR”,”Pri≈°tina International Airport”,1789,”XK”
+”VVDN”,”Da Nang International Airport”,33,”VN”
+”VVNB”,”Noi Bai International Airport”,39,”VN”
+”VVTS”,”Tan Son Nhat International Airport”,33,”VN”
+”SVBC”,”General Jos√© Antonio Anzoategui International Airport”,30,”VE”
+”SVMI”,”Sim√≥n Bol√≠var International Airport”,234,”VE”
+”UTTT”,”Tashkent International Airport”,1417,”UZ”
+”SUMU”,”Carrasco International /General C L Berisso Airport”,105,”UY”
+”KSPI”,”Abraham Lincoln Capital Airport”,598,”US”
+”KABQ”,”Albuquerque International Sunport”,5355,”US”
+”KLTS”,”Altus Air Force Base”,1382,”US”
+”KAVL”,”Asheville Regional Airport”,2165,”US”
+”KAGS”,”Augusta Regional At Bush Field”,144,”US”
+”KAUS”,”Austin Bergstrom International Airport”,542,”US”
+”KGRB”,”Austin Straubel International Airport”,695,”US”
+”KBWI”,”Baltimore/Washington International Thurgood Marshall Airport”,146,”US”
+”KBGR”,”Bangor International Airport”,192,”US”
+”KBAD”,”Barksdale Air Force Base”,166,”US”
+”KBAB”,”Beale Air Force Base”,113,”US”
+”KLIT”,”Bill &amp; Hillary Clinton National Airport/Adams Field”,262,”US”
+”KBIL”,”Billings Logan International Airport”,3652,”US”
+”KBHM”,”Birmingham-Shuttlesworth International Airport”,650,”US”
+”KLEX”,”Blue Grass Airport”,979,”US”
+”KBFI”,”Boeing Field King County International Airport”,21,”US”
+”KBOI”,”Boise Air Terminal/Gowen Field”,2871,”US”
+”KBDL”,”Bradley International Airport”,173,”US”
+”KBUF”,”Buffalo Niagara International Airport”,728,”US”
+”KCVS”,”Cannon Air Force Base”,4295,”US”
+”KBMI”,”Central Illinois Regional Airport at Bloomington-Normal”,871,”US”
+”KCHS”,”Charleston Air Force Base-International Airport”,46,”US”
+”KCLT”,”Charlotte Douglas International Airport”,748,”US”
+”KMDW”,”Chicago Midway International Airport”,620,”US”
+”KORD”,”Chicago O'Hare International Airport”,672,”US”
+”KRFD”,”Chicago Rockford International Airport”,742,”US”
+”KCVG”,”Cincinnati Northern Kentucky International Airport”,896,”US”
+”KCOS”,”City of Colorado Springs Municipal Airport”,6187,”US”
+”KCLE”,”Cleveland Hopkins International Airport”,791,”US”
+”KCAE”,”Columbia Metropolitan Airport”,236,”US”
+”KCBM”,”Columbus Air Force Base”,219,”US”
+”KCRP”,”Corpus Christi International Airport”,44,”US”
+”KDFW”,”Dallas Fort Worth International Airport”,607,”US”
+”KDAL”,”Dallas Love Field”,487,”US”
+”KMSN”,”Dane County Regional Truax Field”,887,”US”
+”PHNL”,”Daniel K Inouye International Airport”,13,”US”
+”KDAB”,”Daytona Beach International Airport”,34,”US”
+”KDEN”,”Denver International Airport”,5431,”US”
+”KDSM”,”Des Moines International Airport”,958,”US”
+”KVPS”,”Destin-Ft Walton Beach Airport”,87,”US”
+”KDTW”,”Detroit Metropolitan Wayne County Airport”,645,”US”
+”KDLF”,”DLF Airport”,1082,”US”
+”KMGE”,”Dobbins Air Reserve Base”,1068,”US”
+”KDOV”,”Dover Air Force Base”,24,”US”
+”KDBQ”,”Dubuque Regional Airport”,1077,”US”
+”KDLH”,”Duluth International Airport”,1428,”US”
+”KDYS”,”Dyess Air Force Base”,1789,”US”
+”KEDW”,”Edwards Air Force Base”,2312,”US”
+”KOMA”,”Eppley Airfield”,984,”US”
+”KERI”,”Erie International Tom Ridge Field”,732,”US”
+”PAFA”,”Fairbanks International Airport”,439,”US”
+”KSKA”,”Fairchild Air Force Base”,2461,”US”
+”KFLL”,”Fort Lauderdale Hollywood International Airport”,9,”US”
+”KFSM”,”Fort Smith Regional Airport”,469,”US”
+”KFWA”,”Fort Wayne International Airport”,814,”US”
+”KAFW”,”Fort Worth Alliance Airport”,722,”US”
+”KFTW”,”Fort Worth Meacham International Airport”,710,”US”
+”KBOS”,”General Edward Lawrence Logan International Airport”,20,”US”
+”KMKE”,”General Mitchell International Airport”,723,”US”
+”KPIA”,”General Wayne A. Downing Peoria International Airport”,660,”US”
+”KIAH”,”George Bush Intercontinental Houston Airport”,97,”US”
+”KROC”,”Greater Rochester International Airport”,559,”US”
+”KGSP”,”Greenville Spartanburg International Airport”,964,”US”
+”KGUS”,”Grissom Air Reserve Base”,812,”US”
+”KGPT”,”Gulfport Biloxi International Airport”,28,”US”
+”KATL”,”Hartsfield Jackson Atlanta International Airport”,1026,”US”
+”KHMN”,”Holloman Air Force Base”,4093,”US”
+”KHSV”,”Huntsville International Carl T Jones Field”,629,”US”
+”KIND”,”Indianapolis International Airport”,797,”US”
+”KJAN”,”Jackson-Medgar Wiley Evers International Airport”,346,”US”
+”KJAX”,”Jacksonville International Airport”,30,”US”
+”KDAY”,”James M Cox Dayton International Airport”,1009,”US”
+”KJFK”,”John F Kennedy International Airport”,13,”US”
+”KCMH”,”John Glenn Columbus International Airport”,815,”US”
+”KSNA”,”John Wayne Airport-Orange County Airport”,56,”US”
+”KADW”,”Joint Base Andrews”,280,”US”
+”KJLN”,”Joplin Regional Airport”,981,”US”
+”KMCI”,”Kansas City International Airport”,1026,”US”
+”KLGA”,”La Guardia Airport”,21,”US”
+”KLFT”,”Lafayette Regional Airport”,42,”US”
+”KLFI”,”Langley Air Force Base”,11,”US”
+”KLAX”,”Los Angeles International Airport”,125,”US”
+”KMSY”,”Louis Armstrong New Orleans International Airport”,4,”US”
+”KSDF”,”Louisville International Standiford Field”,501,”US”
+”KCHA”,”Lovell Field”,683,”US”
+”KLBB”,”Lubbock Preston Smith International Airport”,3282,”US”
+”KLUF”,”Luke Air Force Base”,1085,”US”
+”KMCF”,”Mac Dill Air Force Base”,14,”US”
+”KMHT”,”Manchester-Boston Regional Airport”,266,”US”
+”KMBS”,”MBS International Airport”,668,”US”
+”KLAS”,”McCarran International Airport”,2181,”US”
+”KTCM”,”McChord Air Force Base”,322,”US”
+”KTYS”,”McGhee Tyson Airport”,981,”US”
+”KMEM”,”Memphis International Airport”,341,”US”
+”KOAK”,”Metropolitan Oakland International Airport”,9,”US”
+”KMIA”,”Miami International Airport”,8,”US”
+”KMSP”,”Minneapolis-St Paul International/Wold-Chamberlain Airport”,841,”US”
+”KMOB”,”Mobile Regional Airport”,219,”US”
+”KMLU”,”Monroe Regional Airport”,79,”US”
+”KMGM”,”Montgomery Regional (Dannelly Field) Airport”,221,”US”
+”KMUO”,”Mountain Home Air Force Base”,2996,”US”
+”KBNA”,”Nashville International Airport”,599,”US”
+”KEWR”,”Newark Liberty International Airport”,18,”US”
+”KPHF”,”Newport News Williamsburg International Airport”,42,”US”
+”KORF”,”Norfolk International Airport”,26,”US”
+”KSJC”,”Norman Y. Mineta San Jose International Airport”,62,”US”
+”KONT”,”Ontario International Airport”,944,”US”
+”KMCO”,”Orlando International Airport”,96,”US”
+”KSFB”,”Orlando Sanford International Airport”,55,”US”
+”KPBI”,”Palm Beach International Airport”,19,”US”
+”KPHL”,”Philadelphia International Airport”,36,”US”
+”KPHX”,”Phoenix Sky Harbor International Airport”,1135,”US”
+”KGSO”,”Piedmont Triad International Airport”,925,”US”
+”KPIT”,”Pittsburgh International Airport”,1203,”US”
+”KPDX”,”Portland International Airport”,31,”US”
+”KPWM”,”Portland International Jetport Airport”,76,”US”
+”KMLI”,”Quad City International Airport”,590,”US”
+”KRDU”,”Raleigh Durham International Airport”,435,”US”
+”KRND”,”Randolph Air Force Base”,761,”US”
+”KHIB”,”Range Regional Airport”,1354,”US”
+”KRNO”,”Reno Tahoe International Airport”,4415,”US”
+”KRIC”,”Richmond International Airport”,167,”US”
+”KAMA”,”Rick Husband Amarillo International Airport”,3607,”US”
+”KLCK”,”Rickenbacker International Airport”,744,”US”
+”KROA”,”Roanoke‚ÄìBlacksburg Regional Airport”,1175,”US”
+”KWRB”,”Robins Air Force Base”,294,”US”
+”KRST”,”Rochester International Airport”,1317,”US”
+”KDCA”,”Ronald Reagan Washington National Airport”,15,”US”
+”KSMF”,”Sacramento International Airport”,27,”US”
+”KSLC”,”Salt Lake City International Airport”,4227,”US”
+”KSAT”,”San Antonio International Airport”,809,”US”
+”KSAN”,”San Diego International Airport”,17,”US”
+”KSFO”,”San Francisco International Airport”,13,”US”
+”KSRQ”,”Sarasota Bradenton International Airport”,30,”US”
+”KSAV”,”Savannah Hilton Head International Airport”,50,”US”
+”KBLV”,”Scott AFB/Midamerica Airport”,459,”US”
+”KSEA”,”Seattle Tacoma International Airport”,433,”US”
+”KGSB”,”Seymour Johnson Air Force Base”,109,”US”
+”KSSC”,”Shaw Air Force Base”,241,”US”
+”KSPS”,”Sheppard Air Force Base-Wichita Falls Municipal Airport”,1019,”US”
+”KSUX”,”Sioux Gateway Col. Bud Day Field”,1098,”US”
+”KSBN”,”South Bend Regional Airport”,799,”US”
+”KRSW”,”Southwest Florida International Airport”,30,”US”
+”KSUS”,”Spirit of St Louis Airport”,463,”US”
+”KGEG”,”Spokane International Airport”,2376,”US”
+”KSGF”,”Springfield Branson National Airport”,1268,”US”
+”KSTL”,”St Louis Lambert International Airport”,618,”US”
+”KSYR”,”Syracuse Hancock International Airport”,421,”US”
+”KTLH”,”Tallahassee Regional Airport”,81,”US”
+”KTPA”,”Tampa International Airport”,26,”US”
+”PANC”,”Ted Stevens Anchorage International Airport”,152,”US”
+”KCID”,”The Eastern Iowa Airport”,869,”US”
+”KPVD”,”Theodore Francis Green State Airport”,55,”US”
+”KTIK”,”Tinker Air Force Base”,1291,”US”
+”KTOL”,”Toledo Express Airport”,683,”US”
+”KSUU”,”Travis Air Force Base”,62,”US”
+”KTRI”,”Tri-Cities Regional TN/VA Airport”,1519,”US”
+”KHTS”,”Tri-State/Milton J. Ferguson Field”,828,”US”
+”KTUS”,”Tucson International Airport”,2643,”US”
+”KTUL”,”Tulsa International Airport”,677,”US”
+”KPAM”,”Tyndall Air Force Base”,17,”US”
+”KEND”,”Vance Air Force Base”,1307,”US”
+”KVBG”,”Vandenberg Air Force Base”,369,”US”
+”KIAD”,”Washington Dulles International Airport”,312,”US”
+”KSZL”,”Whiteman Air Force Base”,870,”US”
+”KICT”,”Wichita Eisenhower National Airport”,1333,”US”
+”KOKC”,”Will Rogers World Airport”,1295,”US”
+”KHOU”,”William P Hobby Airport”,46,”US”
+”KFFO”,”Wright-Patterson Air Force Base”,823,”US”
+”KCRW”,”Yeager Airport”,981,”US”
+”HUEN”,”Entebbe International Airport”,3782,”UG”
+”UKBB”,”Boryspil International Airport”,427,”UA”
+”UKHH”,”Kharkiv International Airport”,508,”UA”
+”UKOO”,”Odessa International Airport”,172,”UA”
+”UKFF”,”Simferopol International Airport”,639,”UA”
+”HTZA”,”Abeid Amani Karume International Airport”,54,”TZ”
+”HTDA”,”Julius Nyerere International Airport”,182,”TZ”
+”RCKH”,”Kaohsiung International Airport”,31,”TW”
+”RCBS”,”Kinmen Airport”,93,”TW”
+”RCTP”,”Taiwan Taoyuan International Airport”,106,”TW”
+”LTAF”,”Adana Airport”,65,”TR”
+”LTBJ”,”Adnan Menderes International Airport”,412,”TR”
+”LTAI”,”Antalya International Airport”,177,”TR”
+”LTBA”,”Atat√ºrk International Airport”,163,”TR”
+”LTBS”,”Dalaman International Airport”,20,”TR”
+”LTCE”,”Erzurum International Airport”,5763,”TR”
+”LTAC”,”Esenboƒüa International Airport”,3125,”TR”
+”LTAJ”,”Gaziantep International Airport”,2315,”TR”
+”TR-0043”,”Istanbul Airport”,325,”TR”
+”LTFE”,”Milas Bodrum International Airport”,21,”TR”
+”LTFC”,”S√ºleyman Demirel International Airport”,2835,”TR”
+”LTFJ”,”Sabiha G√∂k√ßen International Airport”,312,”TR”
+”LTCG”,”Trabzon International Airport”,104,”TR”
+”TN-0002”,”Enfidha - Hammamet International Airport”,21,”TN”
+”DTTA”,”Tunis Carthage International Airport”,22,”TN”
+”UTAA”,”Ashgabat International Airport”,692,”TM”
+”VTCC”,”Chiang Mai International Airport”,1036,”TH”
+”VTBD”,”Don Mueang International Airport”,9,”TH”
+”VTSP”,”Phuket International Airport”,82,”TH”
+”VTBS”,”Suvarnabhumi Airport”,5,”TH”
+”FTTJ”,”N'Djamena International Airport”,968,”TD”
+”OSAP”,”Aleppo International Airport”,1276,”SY”
+”OSLK”,”Bassel Al-Assad International Airport”,157,”SY”
+”OSDI”,”Damascus International Airport”,2020,”SY”
+”TNCM”,”Princess Juliana International Airport”,13,”SX”
+”MSLP”,”Monse√±or √ìscar Arnulfo Romero International Airport”,101,”SV”
+”HSSJ”,”Juba International Airport”,1513,”SS”
+”GOBD”,”Blaise Diagne International Airport”,290,”SN”
+”GOOY”,”L√©opold S√©dar Senghor International Airport”,85,”SN”
+”GFLL”,”Lungi International Airport”,84,”SL”
+”LZIB”,”M. R. ≈†tef√°nik Airport”,436,”SK”
+”LJLJ”,”Ljubljana Jo≈æe Puƒçnik Airport”,1273,”SI”
+”WSSS”,”Singapore Changi Airport”,22,”SG”
+”ESGG”,”Gothenburg-Landvetter Airport”,506,”SE”
+”ESPA”,”Lule√• Airport”,65,”SE”
+”ESMS”,”Malm√∂ Sturup Airport”,236,”SE”
+”ESSA”,”Stockholm-Arlanda Airport”,137,”SE”
+”HSSS”,”Khartoum International Airport”,1265,”SD”
+”FSIA”,”Seychelles International Airport”,10,”SC”
+”OEDR”,”King Abdulaziz Air Base”,84,”SA”
+”OEJN”,”King Abdulaziz International Airport”,48,”SA”
+”OEDF”,”King Fahd International Airport”,72,”SA”
+”OERK”,”King Khaled International Airport”,2049,”SA”
+”OEMA”,”Prince Mohammad Bin Abdulaziz Airport”,2151,”SA”
+”HRYR”,”Kigali International Airport”,4859,”RW”
+”UWKG”,”Borisoglebskoye Airport”,213,”RU”
+”UUDD”,”Domodedovo International Airport”,588,”RU”
+”RU-0035”,”Grozny North Airport”,548,”RU”
+”UWKD”,”Kazan International Airport”,411,”RU”
+”UHHH”,”Khabarovsk-Novy Airport”,244,”RU”
+”USSS”,”Koltsovo Airport”,764,”RU”
+”UWWW”,”Kurumoch International Airport”,477,”RU”
+”RU-0016”,”Lipetsk Air Base”,636,”RU”
+”RU-4464”,”Olenya Air Base”,702,”RU”
+”URRP”,”Platov International Airport”,213,”RU”
+”ULLI”,”Pulkovo Airport”,78,”RU”
+”UUEE”,”Sheremetyevo International Airport”,622,”RU”
+”URSS”,”Sochi International Airport”,89,”RU”
+”UNNT”,”Tolmachevo Airport”,365,”RU”
+”UWUU”,”Ufa International Airport”,449,”RU”
+”RU-2244”,”Ukrainka Air Base”,771,”RU”
+”UUWW”,”Vnukovo International Airport”,685,”RU”
+”UNKL”,”Yemelyanovo Airport”,942,”RU”
+”UUBW”,”Zhukovsky International Airport”,377,”RU”
+”LYBE”,”Belgrade Nikola Tesla Airport”,335,”RS”
+”LROP”,”Henri CoandƒÉ International Airport”,314,”RO”
+”QA-0001”,”Hamad International Airport”,13,”QA”
+”LPFR”,”Faro Airport”,24,”PT”
+”LPPR”,”Francisco de S√° Carneiro Airport”,228,”PT”
+”LPPT”,”Humberto Delgado Airport (Lisbon Portela Airport)”,374,”PT”
+”LPPD”,”Jo√£o Paulo II Airport”,259,”PT”
+”LPLA”,”Lajes Airport”,180,”PT”
+”TJSJ”,”Luis Munoz Marin International Airport”,9,”PR”
+”EPWR”,”Copernicus Wroc≈Çaw Airport”,404,”PL”
+”EPGD”,”Gda≈Ñsk Lech Wa≈Çƒôsa Airport”,489,”PL”
+”EPKT”,”Katowice International Airport”,995,”PL”
+”EPKK”,”Krak√≥w John Paul II International Airport”,791,”PL”
+”EPMO”,”Modlin Airport”,341,”PL”
+”EPPO”,”Pozna≈Ñ-≈Åawica Airport”,308,”PL”
+”EPWA”,”Warsaw Chopin Airport”,362,”PL”
+”PK-0001”,”New Islamabad International Airport”,1646,”PK”
+”OPST”,”Sialkot Airport”,837,”PK”
+”RPLC”,”Diosdado Macapagal International Airport”,484,”PH”
+”RPMD”,”Francisco Bangoy International Airport”,96,”PH”
+”PH-0001”,”Laguindingan Airport”,190,”PH”
+”RPVM”,”Mactan Cebu International Airport”,31,”PH”
+”RPLL”,”Ninoy Aquino International Airport”,75,”PH”
+”PH-0073”,”Northern Cagayan International Airport”,,”PH”
+”AYPY”,”Port Moresby Jacksons International Airport”,146,”PG”
+”NTAA”,”Faa'a International Airport”,5,”PF”
+”SPZO”,”Alejandro Velasco Astete International Airport”,10860,”PE”
+”SPIM”,”Jorge Ch√°vez International Airport”,113,”PE”
+”MPTO”,”Tocumen International Airport”,135,”PA”
+”OM-0003”,”Duqm International Airport”,364,”OM”
+”OOMS”,”Muscat International Airport”,48,”OM”
+”OM-0004”,”Rustaq Airport”,349,”OM”
+”NZAA”,”Auckland International Airport”,23,”NZ”
+”NZCH”,”Christchurch International Airport”,123,”NZ”
+”NZWN”,”Wellington International Airport”,41,”NZ”
+”VNKT”,”Tribhuvan International Airport”,4390,”NP”
+”ENBR”,”Bergen Airport Flesland”,170,”NO”
+”ENBO”,”Bod√∏ Airport”,42,”NO”
+”ENGM”,”Oslo Gardermoen Airport”,681,”NO”
+”ENZV”,”Stavanger Airport Sola”,29,”NO”
+”ENTC”,”Troms√∏ Airport”,31,”NO”
+”ENVA”,”Trondheim Airport V√¶rnes”,56,”NO”
+”EHAM”,”Amsterdam Airport Schiphol”,-11,”NL”
+”EHEH”,”Eindhoven Airport”,74,”NL”
+”DNAI”,”Akwa Ibom International Airport”,170,”NG”
+”DNKN”,”Mallam Aminu International Airport”,1562,”NG”
+”DNMM”,”Murtala Muhammed International Airport”,135,”NG”
+”DNAA”,”Nnamdi Azikiwe International Airport”,1123,”NG”
+”DRRN”,”Diori Hamani International Airport”,732,”NE”
+”FYWH”,”Hosea Kutako International Airport”,5640,”NA”
+”FQMA”,”Maputo Airport”,145,”MZ”
+”WMKK”,”Kuala Lumpur International Airport”,69,”MY”
+”MMUN”,”Canc√∫n International Airport”,22,”MX”
+”MMGL”,”Don Miguel Hidalgo Y Costilla International Airport”,5016,”MX”
+”MMTJ”,”General Abelardo L. Rodr√≠guez International Airport”,489,”MX”
+”MMHO”,”General Ignacio P. Garcia International Airport”,627,”MX”
+”MMAA”,”General Juan N Alvarez International Airport”,16,”MX”
+”MMMY”,”General Mariano Escobedo International Airport”,1278,”MX”
+”MMMX”,”Licenciado Benito Juarez International Airport”,7316,”MX”
+”MMPR”,”Licenciado Gustavo D√≠az Ordaz International Airport”,23,”MX”
+”MMSD”,”Los Cabos International Airport”,374,”MX”
+”VRMM”,”Mal√© International Airport”,6,”MV”
+”FIMP”,”Sir Seewoosagur Ramgoolam International Airport”,186,”MU”
+”LMML”,”Malta International Airport”,300,”MT”
+”GQNO”,”Nouakchott‚ÄìOumtounsy International Airport”,9,”MR”
+”VMMC”,”Macau International Airport”,20,”MO”
+”ZMUB”,”Chinggis Khaan International Airport”,4364,”MN”
+”VYMD”,”Mandalay International Airport”,300,”MM”
+”VYYY”,”Yangon International Airport”,109,”MM”
+”GABS”,”Modibo Keita International Airport”,1247,”ML”
+”LWSK”,”Skopje Alexander the Great Airport”,781,”MK”
+”FMMI”,”Ivato Airport”,4198,”MG”
+”LYPG”,”Podgorica Airport”,141,”ME”
+”GMMN”,”Mohammed V International Airport”,656,”MA”
+”HLLT”,”Tripoli International Airport”,263,”LY”
+”EVRA”,”Riga International Airport”,36,”LV”
+”ELLX”,”Luxembourg-Findel International Airport”,1234,”LU”
+”EYVI”,”Vilnius International Airport”,648,”LT”
+”GLRB”,”Roberts International Airport”,31,”LR”
+”VCBI”,”Bandaranaike International Colombo Airport”,30,”LK”
+”VCRI”,”Mattala Rajapaksa International Airport”,157,”LK”
+”OLBA”,”Beirut Rafic Hariri International Airport”,87,”LB”
+”UAAA”,”Almaty Airport”,2234,”KZ”
+”UACC”,”Astana International Airport”,1165,”KZ”
+”UAKK”,”Sary-Arka Airport”,1765,”KZ”
+”MWCR”,”Owen Roberts International Airport”,8,”KY”
+”OKBK”,”Kuwait International Airport”,206,”KW”
+”RKTU”,”Cheongju International Airport/Cheongju Air Base (K-59/G-513)”,191,”KR”
+”RKPK”,”Gimhae International Airport”,6,”KR”
+”RKSS”,”Gimpo International Airport”,59,”KR”
+”RKSI”,”Incheon International Airport”,23,”KR”
+”RKPC”,”Jeju International Airport”,118,”KR”
+”RKJK”,”Kunsan Air Base”,29,”KR”
+”RKJB”,”Muan International Airport”,35,”KR”
+”RKSO”,”Osan Air Base”,38,”KR”
+”VDPP”,”Phnom Penh International Airport”,40,”KH”
+”VDSR”,”Siem Reap International Airport”,60,”KH”
+”UAFM”,”Manas International Airport”,2058,”KG”
+”HKJK”,”Jomo Kenyatta International Airport”,5330,”KE”
+”HKMO”,”Mombasa Moi International Airport”,200,”KE”
+”RJGG”,”Chubu Centrair International Airport”,15,”JP”
+”RJFF”,”Fukuoka Airport”,32,”JP”
+”RODN”,”Kadena Air Base”,143,”JP”
+”RJFK”,”Kagoshima Airport”,906,”JP”
+”RJBB”,”Kansai International Airport”,26,”JP”
+”rjns”,”Mt. Fuji Shizuoka Airport”,433,”JP”
+”ROAH”,”Naha Airport”,12,”JP”
+”RJAA”,”Narita International Airport”,141,”JP”
+”RJCC”,”New Chitose Airport”,82,”JP”
+”RJOO”,”Osaka International Airport”,50,”JP”
+”RJTT”,”Tokyo Haneda International Airport”,35,”JP”
+”RJTY”,”Yokota Air Base”,463,”JP”
+”OJAI”,”Queen Alia International Airport”,2395,”JO”
+”MKJP”,”Norman Manley International Airport”,10,”JM”
+”LIBD”,”Bari Karol Wojty≈Ça Airport”,177,”IT”
+”LIPE”,”Bologna Guglielmo Marconi Airport”,123,”IT”
+”LIEE”,”Cagliari Elmas Airport”,13,”IT”
+”LICC”,”Catania-Fontanarossa Airport”,39,”IT”
+”LIRA”,”Ciampino‚ÄìG. B. Pastine International Airport”,427,”IT”
+”LICJ”,”Falcone‚ÄìBorsellino Airport”,65,”IT”
+”LIMJ”,”Genoa Cristoforo Colombo Airport”,13,”IT”
+”LIME”,”Il Caravaggio International Airport”,782,”IT”
+”LIRF”,”Leonardo da Vinci‚ÄìFiumicino Airport”,13,”IT”
+”LIMC”,”Malpensa International Airport”,768,”IT”
+”LIML”,”Milano Linate Airport”,353,”IT”
+”LIRN”,”Naples International Airport”,294,”IT”
+”LIRP”,”Pisa International Airport”,6,”IT”
+”LIPH”,”Treviso-Sant'Angelo Airport”,59,”IT”
+”LIMF”,”Turin Airport”,989,”IT”
+”LIPZ”,”Venice Marco Polo Airport”,7,”IT”
+”LIPX”,”Verona Villafranca Airport”,239,”IT”
+”BIKF”,”Keflavik International Airport”,171,”IS”
+”OIIE”,”Imam Khomeini International Airport”,3305,”IR”
+”OIMM”,”Mashhad International Airport”,3263,”IR”
+”OIII”,”Mehrabad International Airport”,3962,”IR”
+”OISS”,”Shiraz Shahid Dastghaib International Airport”,4920,”IR”
+”OITT”,”Tabriz International Airport”,4459,”IR”
+”ORBI”,”Baghdad International Airport”,114,”IQ”
+”ORMM”,”Basrah International Airport”,11,”IQ”
+”VOCL”,”Calicut International Airport”,342,”IN”
+”VOMM”,”Chennai International Airport”,52,”IN”
+”VABB”,”Chhatrapati Shivaji International Airport”,39,”IN”
+”VOCI”,”Cochin International Airport”,30,”IN”
+”VAGO”,”Dabolim Airport”,150,”IN”
+”VIDP”,”Indira Gandhi International Airport”,777,”IN”
+”VOBL”,”Kempegowda International Airport”,3000,”IN”
+”VECC”,”Netaji Subhash Chandra Bose International Airport”,16,”IN”
+”VOHS”,”Rajiv Gandhi International Airport”,2024,”IN”
+”VIAR”,”Sri Guru Ram Dass Jee International Airport”,756,”IN”
+”VOTV”,”Trivandrum International Airport”,15,”IN”
+”LLBG”,”Ben Gurion International Airport”,135,”IL”
+”LLOV”,”Ovda International Airport”,1492,”IL”
+”EICK”,”Cork Airport”,502,”IE”
+”EIDW”,”Dublin Airport”,242,”IE”
+”EINN”,”Shannon Airport”,46,”IE”
+”WAXX”,”Dominique Edward Osok Airport”,10,”ID”
+”WAAA”,”Hasanuddin International Airport”,47,”ID”
+”WARR”,”Juanda International Airport”,9,”ID”
+”WIMM”,”Kualanamu International Airport”,23,”ID”
+”WADD”,”Ngurah Rai (Bali) International Airport”,14,”ID”
+”WAJJ”,”Sentani International Airport”,289,”ID”
+”WIII”,”Soekarno-Hatta International Airport”,34,”ID”
+”ID-0017”,”Sungai Siring International Airport”,82,”ID”
+”LHBP”,”Budapest Liszt Ferenc International Airport”,495,”HU”
+”LDZA”,”Zagreb Airport”,353,”HR”
+”VHHH”,”Hong Kong International Airport”,28,”HK”
+”PGUM”,”Antonio B. Won Pat International Airport”,298,”GU”
+”MGGT”,”La Aurora Airport”,4952,”GT”
+”LGAV”,”Eleftherios Venizelos International Airport”,308,”GR”
+”LGIR”,”Heraklion International Nikos Kazantzakis Airport”,115,”GR”
+”LGTS”,”Thessaloniki Macedonia International Airport”,22,”GR”
+”TFFR”,”Pointe-√†-Pitre Le Raizet”,36,”GP”
+”DGAA”,”Kotoka International Airport”,205,”GH”
+”UGTB”,”Tbilisi International Airport”,1624,”GE”
+”EGPD”,”Aberdeen Dyce Airport”,215,”GB”
+”EGAA”,”Belfast International Airport”,268,”GB”
+”EGBB”,”Birmingham International Airport”,327,”GB”
+”EGHH”,”Bournemouth Airport”,38,”GB”
+”EGGD”,”Bristol Airport”,622,”GB”
+”EGFF”,”Cardiff International Airport”,220,”GB”
+”EGNX”,”East Midlands Airport”,306,”GB”
+”EGPH”,”Edinburgh Airport”,135,”GB”
+”EGTE”,”Exeter International Airport”,102,”GB”
+”EGAC”,”George Best Belfast City Airport”,15,”GB”
+”EGPF”,”Glasgow International Airport”,26,”GB”
+”EGNM”,”Leeds Bradford Airport”,681,”GB”
+”EGGP”,”Liverpool John Lennon Airport”,80,”GB”
+”EGKK”,”London Gatwick Airport”,202,”GB”
+”EGLL”,”London Heathrow Airport”,83,”GB”
+”EGGW”,”London Luton Airport”,526,”GB”
+”EGSS”,”London Stansted Airport”,348,”GB”
+”EGCC”,”Manchester Airport”,257,”GB”
+”EGNT”,”Newcastle Airport”,266,”GB”
+”EGSH”,”Norwich International Airport”,117,”GB”
+”LCRA”,”RAF Akrotiri”,76,”GB”
+”EGVN”,”RAF Brize Norton”,288,”GB”
+”EGVA”,”RAF Fairford”,286,”GB”
+”EGUL”,”RAF Lakenheath”,32,”GB”
+”EGUN”,”RAF Mildenhall”,33,”GB”
+”EGCN”,”Robin Hood Doncaster Sheffield Airport”,55,”GB”
+”EGHI”,”Southampton Airport”,44,”GB”
+”LFOA”,”Avord (BA 702) Air Base”,580,”FR”
+”LFBD”,”Bordeaux-M√©rignac Airport”,162,”FR”
+”LFPG”,”Charles de Gaulle International Airport”,392,”FR”
+”LFSB”,”EuroAirport Basel-Mulhouse-Freiburg Airport”,885,”FR”
+”LFLL”,”Lyon Saint-Exup√©ry Airport”,821,”FR”
+”LFML”,”Marseille Provence Airport”,74,”FR”
+”LFMN”,”Nice-C√¥te d'Azur Airport”,12,”FR”
+”LFPO”,”Paris-Orly Airport”,291,”FR”
+”LFBO”,”Toulouse-Blagnac Airport”,499,”FR”
+”EFHK”,”Helsinki Vantaa Airport”,179,”FI”
+”HAAB”,”Addis Ababa Bole International Airport”,7630,”ET”
+”LEMD”,”Adolfo Su√°rez Madrid‚ÄìBarajas Airport”,1998,”ES”
+”LEAL”,”Alicante International Airport”,142,”ES”
+”LEBL”,”Barcelona International Airport”,12,”ES”
+”GCLP”,”Gran Canaria Airport”,78,”ES”
+”GCLA”,”La Palma Airport”,107,”ES”
+”LEMG”,”M√°laga Airport”,53,”ES”
+”LEPA”,”Palma De Mallorca Airport”,27,”ES”
+”LEST”,”Santiago de Compostela Airport”,1213,”ES”
+”GCXO”,”Tenerife Norte Airport”,2076,”ES”
+”GCTS”,”Tenerife South Airport”,209,”ES”
+”HECA”,”Cairo International Airport”,382,”EG”
+”HEGN”,”Hurghada International Airport”,52,”EG”
+”HELX”,”Luxor International Airport”,294,”EG”
+”EETN”,”Lennart Meri Tallinn Airport”,131,”EE”
+”SELT”,”Cotopaxi International Airport”,9205,”EC”
+”SEQM”,”Mariscal Sucre International Airport”,7841,”EC”
+”DAAG”,”Houari Boumediene Airport”,82,”DZ”
+”MDSD”,”Las Am√©ricas International Airport”,59,”DO”
+”MDPC”,”Punta Cana International Airport”,47,”DO”
+”EKYT”,”Aalborg Airport”,10,”DK”
+”EKBI”,”Billund Airport”,247,”DK”
+”EKCH”,”Copenhagen Kastrup Airport”,17,”DK”
+”EDDB”,”Berlin-Sch√∂nefeld Airport”,157,”DE”
+”EDDT”,”Berlin-Tegel Airport”,122,”DE”
+”EDDW”,”Bremen Airport”,14,”DE”
+”EDDK”,”Cologne Bonn Airport”,302,”DE”
+”EDDL”,”D√ºsseldorf Airport”,147,”DE”
+”EDLW”,”Dortmund Airport”,425,”DE”
+”EDDC”,”Dresden Airport”,755,”DE”
+”EDDF”,”Frankfurt am Main Airport”,364,”DE”
+”EDDH”,”Hamburg Airport”,53,”DE”
+”EDDV”,”Hannover Airport”,183,”DE”
+”EDSB”,”Karlsruhe Baden-Baden Airport”,408,”DE”
+”EDDP”,”Leipzig/Halle Airport”,465,”DE”
+”EDDG”,”M√ºnster Osnabr√ºck Airport”,160,”DE”
+”EDDM”,”Munich Airport”,1487,”DE”
+”EDDN”,”Nuremberg Airport”,1046,”DE”
+”ETAR”,”Ramstein Air Base”,776,”DE”
+”EDDS”,”Stuttgart Airport”,1276,”DE”
+”LKPR”,”V√°clav Havel Airport Prague”,1247,”CZ”
+”LCLK”,”Larnaca International Airport”,8,”CY”
+”LCPH”,”Paphos International Airport”,41,”CY”
+”GVAC”,”Am√≠lcar Cabral International Airport”,177,”CV”
+”MUHA”,”Jos√© Mart√≠ International Airport”,210,”CU”
+”MUVR”,”Juan Gualberto Gomez International Airport”,210,”CU”
+”MRLB”,”Daniel Oduber Quiros International Airport”,270,”CR”
+”SKBO”,”El Dorado International Airport”,8361,”CO”
+”ZWWW”,”√úr√ºmqi Diwopu International Airport”,2125,”CN”
+”ZBHH”,”Baita International Airport”,3556,”CN”
+”ZBAA”,”Beijing Capital International Airport”,116,”CN”
+”ZBAD”,”Beijing Daxing International Airport”,98,”CN”
+”ZBNY”,”Beijing Nanyuan Airport”,,”CN”
+”ZGHA”,”Changsha Huanghua International Airport”,217,”CN”
+”ZUUU”,”Chengdu Shuangliu International Airport”,1625,”CN”
+”ZUCK”,”Chongqing Jiangbei International Airport”,1365,”CN”
+”ZSFZ”,”Fuzhou Changle International Airport”,46,”CN”
+”ZGGG”,”Guangzhou Baiyun International Airport”,50,”CN”
+”ZGKL”,”Guilin Liangjiang International Airport”,570,”CN”
+”CN-0083”,”Guodu air base”,,”CN”
+”ZJHK”,”Haikou Meilan International Airport”,75,”CN”
+”ZSHC”,”Hangzhou Xiaoshan International Airport”,23,”CN”
+”ZPPP”,”Kunming Changshui International Airport”,6903,”CN”
+”ZUGY”,”Longdongbao Airport”,3736,”CN”
+”ZSNJ”,”Nanjing Lukou Airport”,49,”CN”
+”ZGNN”,”Nanning Wuxu Airport”,421,”CN”
+”ZSNB”,”Ningbo Lishe International Airport”,13,”CN”
+”ZJSY”,”Sanya Phoenix International Airport”,92,”CN”
+”ZSSS”,”Shanghai Hongqiao International Airport”,10,”CN”
+”ZSPD”,”Shanghai Pudong International Airport”,13,”CN”
+”ZGSZ”,”Shenzhen Bao'an International Airport”,13,”CN”
+”ZYHB”,”Taiping Airport”,457,”CN”
+”ZBYN”,”Taiyuan Wusu Airport”,2575,”CN”
+”ZYTX”,”Taoxian Airport”,198,”CN”
+”ZBTJ”,”Tianjin Binhai International Airport”,10,”CN”
+”ZSWZ”,”Wenzhou Longwan International Airport”,,”CN”
+”ZHHH”,”Wuhan Tianhe International Airport”,113,”CN”
+”ZLXY”,”Xi'an Xianyang International Airport”,1572,”CN”
+”ZSAM”,”Xiamen Gaoqi International Airport”,59,”CN”
+”ZSJN”,”Yaoqiang Airport”,76,”CN”
+”ZHCC”,”Zhengzhou Xinzheng International Airport”,495,”CN”
+”ZYTL”,”Zhoushuizi Airport”,107,”CN”
+”SCEL”,”Comodoro Arturo Merino Ben√≠tez International Airport”,1555,”CL”
+”NCRG”,”Rarotonga International Airport”,19,”CK”
+”LSGG”,”Geneva Cointrin International Airport”,1411,”CH”
+”LSZH”,”Z√ºrich Airport”,1416,”CH”
+”FZAA”,”Ndjili International Airport”,1027,”CD”
+”CYYC”,”Calgary International Airport”,3557,”CA”
+”CA-0671”,”Cyll”,,”CA”
+”CYEG”,”Edmonton International Airport”,2373,”CA”
+”CYHZ”,”Halifax / Stanfield International Airport”,477,”CA”
+”CYYZ”,”Lester B. Pearson International Airport”,569,”CA”
+”CYUL”,”Montreal / Pierre Elliott Trudeau International Airport”,118,”CA”
+”CYOW”,”Ottawa Macdonald-Cartier International Airport”,374,”CA”
+”CYYT”,”St. John's International Airport”,461,”CA”
+”CYVR”,”Vancouver International Airport”,14,”CA”
+”CYYJ”,”Victoria International Airport”,63,”CA”
+”CYWG”,”Winnipeg / James Armstrong Richardson International Airport”,783,”CA”
+”MZBZ”,”Philip S. W. Goldson International Airport”,15,”BZ”
+”UMMS”,”Minsk National Airport”,670,”BY”
+”FBSK”,”Sir Seretse Khama International Airport”,3299,”BW”
+”MYNN”,”Lynden Pindling International Airport”,16,”BS”
+”SBCT”,”Afonso Pena Airport”,2988,”BR”
+”SBSP”,”Congonhas Airport”,2631,”BR”
+”SBSV”,”Deputado Luiz Eduardo Magalh√£es International Airport”,64,”BR”
+”SBSG”,”Governador Alu√≠zio Alves International Airport”,272,”BR”
+”SBGR”,”Guarulhos - Governador Andr√© Franco Montoro International Airport”,2459,”BR”
+”SBFL”,”Herc√≠lio Luz International Airport”,16,”BR”
+”SBBR”,”Presidente Juscelino Kubistschek International Airport”,3497,”BR”
+”SBGL”,”Rio Gale√£o ‚Äì Tom Jobim International Airport”,28,”BR”
+”SBCF”,”Tancredo Neves International Airport”,2715,”BR”
+”SBBE”,”Val de Cans/J√∫lio Cezar Ribeiro International Airport”,54,”BR”
+”SLVR”,”Viru Viru International Airport”,1224,”BO”
+”WBSB”,”Brunei International Airport”,73,”BN”
+”OBBI”,”Bahrain International Airport”,6,”BH”
+”LBBG”,”Burgas Airport”,135,”BG”
+”LBSF”,”Sofia Airport”,1742,”BG”
+”LBWN”,”Varna Airport”,230,”BG”
+”DFFD”,”Ouagadougou Airport”,1037,”BF”
+”EBBR”,”Brussels Airport”,184,”BE”
+”EBCI”,”Brussels South Charleroi Airport”,614,”BE”
+”EBLG”,”Li√®ge Airport”,659,”BE”
+”VGZR”,”Hazrat Shahjalal International Airport”,30,”BD”
+”LQSA”,”Sarajevo International Airport”,1708,”BA”
+”UBBB”,”Heydar Aliyev International Airport”,10,”AZ”
+”YPAD”,”Adelaide International Airport”,20,”AU”
+”YBBN”,”Brisbane International Airport”,13,”AU”
+”YSCB”,”Canberra International Airport”,1886,”AU”
+”YMML”,”Melbourne International Airport”,434,”AU”
+”YPPH”,”Perth International Airport”,67,”AU”
+”YSSY”,”Sydney Kingsford Smith International Airport”,21,”AU”
+”LOWW”,”Vienna International Airport”,600,”AT”
+”SAEZ”,”Ministro Pistarini International Airport”,67,”AR”
+”FNLU”,”Quatro de Fevereiro Airport”,243,”AO”
+”UDYZ”,”Zvartnots International Airport”,2838,”AM”
+”LATI”,”Tirana International Airport Mother Teresa”,126,”AL”
+”OMAA”,”Abu Dhabi International Airport”,88,”AE”
+”OMDW”,”Al Maktoum International Airport”,114,”AE”
+”OMDB”,”Dubai International Airport”,62,”AE”
+”OMSJ”,”Sharjah International Airport”,111,”AE”

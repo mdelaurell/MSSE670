@@ -12,8 +12,11 @@ public class Traveler implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 3883123844111677464L;
+	private static final long serialVersionUID = 3726244877680489726L;
 
+	/**
+	 * 
+	 */
 	//Traveler id
 	private int id;
 	
@@ -30,16 +33,16 @@ public class Traveler implements Serializable {
 	private String lastName;
 	
 	//Traveler Address
-	private Address address;
+	//private Address address;
 	
 	//Traveler email address
 	private String emailAddress;
 	
 	//Traveler CreditCard Information
-	private CreditCard creditcard;
+	//private CreditCard creditcard;
 	
 	//Travelers Reservation
-	private Reservation reservation;
+	//private Reservation reservation;
 	
 	/**
 	 * 
@@ -47,14 +50,14 @@ public class Traveler implements Serializable {
 	 * 
 	 */
 	
-	public Traveler(int id, String username, String password, String firstName, String lastName,
+/*	public Traveler(int id, String username, String password, String firstName, String lastName,
 			Address address, String emailAddress, CreditCard creditcard, Reservation reservation) {
 		
 		//From geeksforgeeks.org
 		/* The super keyword in java is a reference variable that is used to refer parent 
 		 * class objects.  The keyword “super” came into the picture with the concept of 
 		 * Inheritance.
-		 */
+		 *
 		super();
 		this.id = id;
 		this.username = username;
@@ -66,6 +69,7 @@ public class Traveler implements Serializable {
 		this.creditcard = creditcard;
 		this.reservation = reservation;
 	}
+*/
 		
 	/**
 	 * 
@@ -78,6 +82,7 @@ public class Traveler implements Serializable {
 	
 	public Traveler(int id, String username, String password, String firstName, String lastName,
 			String emailAddress){
+		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
@@ -126,7 +131,7 @@ public class Traveler implements Serializable {
 	/**
 	 * @return the address
 	 */
-	public Address getAddress() {
+/* public Address getAddress() {
 		return address;
 	}
 
@@ -140,17 +145,17 @@ public class Traveler implements Serializable {
 	/**
 	 * @return the creditcard
 	 */
-	public CreditCard getCreditCard() {
+/*	public CreditCard getCreditCard() {
 		return creditcard;
 	}
 
 	/**
 	 * @return the reservation
 	 */
-	public Reservation getReservation() {
+/*	public Reservation getReservation() {
 		return reservation;
 	}
-	
+*/	
 	//Setters
 
 	/**
@@ -189,7 +194,7 @@ public class Traveler implements Serializable {
 	 * @param address
 	 * 			set the address
 	 */
-	public void setUsername(Address address) {
+/*	public void setUsername(Address address) {
 		this.address = address;
 	}
 	
@@ -205,7 +210,7 @@ public class Traveler implements Serializable {
 	 * @param creditcard
 	 * 			set the creditcard
 	 */
-	public void setCreditCard(CreditCard creditcard) {
+/*	public void setCreditCard(CreditCard creditcard) {
 		this.creditcard = creditcard;
 	}
 	
@@ -213,10 +218,10 @@ public class Traveler implements Serializable {
 	 * @param reservation
 	 * 			set the reservation
 	 */
-	public void setReservation(Reservation reservation) {
+/*	public void setReservation(Reservation reservation) {
 		this.reservation = reservation;
 	}
-	
+*/	
 	
 	public boolean validate() {
 		if (id == 0)
@@ -260,34 +265,39 @@ public class Traveler implements Serializable {
 				return false;
 		}else if (!firstName.equals(trvl.firstName))
 			return false;
-		if (address == null) {
+/*		if (address == null) {
 			if (trvl.address != null)
 				return false;
 		} else if (!address.equals(trvl.address))
-			return false;
+			return false; */
 		if (emailAddress == null) {
 			if (trvl.emailAddress != null)
 				return false;
 		} else if (!emailAddress.equals(trvl.emailAddress))
 			return false;
-		if (creditcard == null) {
+		/*		if (creditcard == null) {
 			if (trvl.creditcard != null)
 				return false;
 		} else if (!creditcard.equals(trvl.creditcard))
-			return false;
+			return false; 
 		if (reservation == null) {
 			if (trvl.reservation != null)
 				return false;
 		} else if (!reservation.equals(trvl.reservation))
-			return false;
+			return false; */
 		return true;
 	}
 	
-	@Override
+/*	@Override
 	public String toString() {
 		return "Traveler [userName =" + username + ", password=" + password + ", firstName =" + firstName +
 				", lastName=" + lastName + ",address=" + address + ", emailAddress=" + emailAddress +
 				", creditcard=" + creditcard + ", reservation=" + reservation + "]";
+	} */
+	@Override
+	public String toString() {
+		return "Traveler [userName =" + username + ", password=" + password + ", firstName =" + firstName +
+				", lastName=" + lastName + ", emailAddress=" + emailAddress + "]";
 	}
 
 	
