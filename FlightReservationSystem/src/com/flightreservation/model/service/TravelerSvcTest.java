@@ -29,7 +29,7 @@ class TravelerSvcTest extends TestCase{
 	public void aTraveler() {
 		try {
 			itrs = (ITravelerSvc) factory.getService("ITravelerSvc");
-			Traveler trvlr = new Traveler(23, "username", "password", "firstName", "lastname", "email@email.com");
+			Traveler trvlr = new Traveler(23, "mdelaurell", "mypassword", "Michael", "DeLaurell", "mike@email.com");
 			itrs.aTraveler(trvlr);
 		} catch (ServiceLoadException e) {
 			// TODO Auto-generated catch block
@@ -46,7 +46,7 @@ class TravelerSvcTest extends TestCase{
 		try {
 			ITravelerSvc itrs = (ITravelerSvc) factory.getService("ITravelerSvc");
 			travel = itrs.getTraveler(0);
-			Traveler trvl = new Traveler(0001,"username","password","firstName","lastName","email@address.com");
+			Traveler trvl = new Traveler(0001,"johndoe","johnpassword","John","Doe","john.doe@address.com");
 			assertTrue(travel.equals(trvl));
 			assertFalse(travel == trvl);
 			assertEquals(travel, trvl);

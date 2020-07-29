@@ -84,8 +84,8 @@ public class TravelerLogin extends JFrame {
 					public void actionPerformed(ActionEvent login) {
 						
 						String msg = textField.getText();
-						LoginConfirmation lgnConfirm = new LoginConfirmation(msg);
-						lgnConfirm.setVisible(true);
+						CreateReservation resReservation = new CreateReservation();
+						resReservation.setVisible(true);
 						setVisible(false);
 						
 					}

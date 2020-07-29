@@ -129,8 +129,11 @@ public class TravelerRegister extends JFrame {
 							int id;
 							
 							traveler = new Traveler(0001, userField.getText(), passField.getPassword().toString(), firstNameField.getText(), lastNameField.getText(), emailField.getText());
-							
 							trvlrMgr.create(traveler);
+							
+							TravelerLogin trvlLogin = new TravelerLogin();
+							trvlLogin.setVisible(true);
+							setVisible(false);
 							
 						} catch (ServiceLoadException sle) {
 							// TODO Auto-generated catch block
@@ -144,6 +147,7 @@ public class TravelerRegister extends JFrame {
 			 }
 			 
 		);
+	 
 	
 	}
 	
