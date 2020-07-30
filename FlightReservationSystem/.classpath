@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Home"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="src" path="test"/>
-	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
-	<classpathentry kind="lib" path="jcalendar-1.4.jar"/>
-	<classpathentry kind="lib" path="jgoodies-common-1.2.0.jar"/>
-	<classpathentry kind="lib" path="jgoodies-looks-2.4.1.jar"/>
-	<classpathentry kind="lib" path="LGoodDatePicker-10.4.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Michael.delaurell/Downloads/jcalendar-1.4/lib/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="/Users/Michael.delaurell/Downloads/jgoodies-looks-2.5.3/jgoodies-looks-2.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/Michael.delaurell/Downloads/jgoodies-forms-1.8.0/jgoodies-forms-1.8.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Michael.delaurell/Downloads/jgoodies-common-1.8.1/jgoodies-common-1.8.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Michael.delaurell/Downloads/LGoodDatePicker-10.4.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
