@@ -17,6 +17,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
 
 public class FlightReservation extends JDialog {
 	/**
@@ -41,6 +42,14 @@ public class FlightReservation extends JDialog {
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 * @throws IOException
+	 */
+	//This methods reads the objects from ReservationData.out file 
+	// and writes them to a string which is returned to the JText Area to display
+	// Updates for the CreateReservation action are reflected in the display
 	
 	public String getReservations() throws IOException {
 		File newFile = new File("ReservationData.out");
@@ -108,10 +117,13 @@ public class FlightReservation extends JDialog {
 		lblFlightReservations.setBounds(6, 6, 155, 16);
 		getContentPane().add(lblFlightReservations);
 		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(16, 34, 775, 293);
+		getContentPane().add(scrollPane);
+		
 		JTextArea textArea = new JTextArea();
+		scrollPane.setViewportView(textArea);
 		textArea.setEditable(false);
-		textArea.setBounds(16, 34, 775, 293);
-		getContentPane().add(textArea);
 		textArea.setText(getReservations());
 		
 		JButton btnAddRes = new JButton("Create Reservation");

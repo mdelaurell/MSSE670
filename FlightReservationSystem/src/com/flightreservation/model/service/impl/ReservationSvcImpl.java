@@ -29,6 +29,8 @@ public class ReservationSvcImpl implements IReservationSvc{
 					
 					boolean append = file.exists();
 					System.out.println(append);
+					// Using AppendableObjectOutputStream due to corruption of file without this update.
+					//This was provided via searching on web to resolve the display issue of files with Streaming.
 					
 					FileOutputStream fout = new FileOutputStream(file, append);
 					AppendableObjectOutputStream output = new AppendableObjectOutputStream(fout, append);

@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -84,8 +85,14 @@ public class TravelerLogin extends JFrame {
 					public void actionPerformed(ActionEvent login) {
 						
 						String msg = textField.getText();
-						CreateReservation resReservation = new CreateReservation();
-						resReservation.setVisible(true);
+						FlightReservation flightRes = null;
+						try {
+							flightRes = new FlightReservation();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						flightRes.setVisible(true);
 						setVisible(false);
 						
 					}
