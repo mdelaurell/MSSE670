@@ -1,10 +1,17 @@
+
 package com.flightreservation.model.service.impl;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.nio.channels.FileChannel;
+import java.nio.charset.StandardCharsets;
+import com.flighreservation.model.utilities.AppendableObjectOutputStream;
 
 import com.flightreservation.model.domain.Reservation;
 import com.flightreservation.model.exception.ReservationException;
@@ -16,12 +23,20 @@ public class ReservationSvcImpl implements IReservationSvc{
 	public void TravelerReservation(Reservation res) throws ReservationException {
 		// Create a new reservation and save it to the file - 
 		
-				ObjectOutputStream output = null;
+				
 				try {
-					output = new ObjectOutputStream(new FileOutputStream("ReservationData.out", true));
+					File file = new File("ReservationData.out");
+					
+					boolean append = file.exists();
+					System.out.println(append);
+					
+					FileOutputStream fout = new FileOutputStream(file, append);
+					AppendableObjectOutputStream output = new AppendableObjectOutputStream(fout, append);
+					
 					output.writeObject(res);
 					output.flush();
 					output.close();
+				
 				}catch(IOException e) {
 					e.printStackTrace();
 				}
@@ -29,7 +44,7 @@ public class ReservationSvcImpl implements IReservationSvc{
 			}	
 	
 	@Override
-	public Reservation getReservation(String reservationNumber) {
+	public Reservation getReservation(int reservationNumber) {
 		// Get the Reservation Information for Display
 		ObjectInputStream input;
 		Reservation savedRes = null;
@@ -37,10 +52,10 @@ public class ReservationSvcImpl implements IReservationSvc{
 			input = new ObjectInputStream(new FileInputStream("ReservationData.out"));
 			savedRes = (Reservation)input.readObject();
 			input.close();
-			System.out.println(savedRes);
+			//System.out.println(savedRes);
 			if (savedRes != null) {
-				System.out.println(savedRes);
-				System.out.println("Reservation Service has been enter getReservation Method");
+				//System.out.println(savedRes);
+				//System.out.println("Reservation Service has been enter getReservation Method");
 
 			}else {
 				System.out.println("No data available");
@@ -58,12 +73,28 @@ public class ReservationSvcImpl implements IReservationSvc{
 			return savedRes;
 		}
 	}
+	
+	@Override
+	public Reservation getAllReservation() {
+		// Get the Reservation Information for Display
+		ObjectInputStream input;
+		Reservation AllsavedRes = null;
+		try {
+
+	    
+			 
+		}
+		finally {
+			return AllsavedRes;
+		}
+	}
+
 
 	@Override
 	public Reservation saveReservation(String reservationNumber) {
 		// Save reservation to the file
 		System.out.println("Reservation Service has been enter TravelerReservation Method");
-		return new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+		return new Reservation(00001, "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
 
 
 	}
@@ -72,7 +103,7 @@ public class ReservationSvcImpl implements IReservationSvc{
 	public Reservation updateReservation(String reservationNumber) {
 		// Update the reservation
 		System.out.println("Reservation Service has been enter saveReservation Method");
-		return new Reservation("00003", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Dublin Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+		return new Reservation(00003, "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Dublin Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
 
 	}
 
@@ -80,7 +111,7 @@ public class ReservationSvcImpl implements IReservationSvc{
 	public Reservation deleteReservation(String reservationNumber) {
 		// delete the reservation from the file
 		System.out.println("Reservation Service has been enter deleteReservation Method");
-		return new Reservation("00004", "29/03/2020", "Pending","Edinburgh Airport", "London Gatwick Airport","London Gatwick Airport","Devner International Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+		return new Reservation(00004, "29/03/2020", "Pending","Edinburgh Airport", "London Gatwick Airport","London Gatwick Airport","Devner International Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
 
 	}
 
@@ -88,7 +119,7 @@ public class ReservationSvcImpl implements IReservationSvc{
 	public Reservation purchaseReservation(String reservationNumber) {
 		// Purchase the reservation by updating the status to purchase.
 		System.out.println("Reservation Service has been enter purchaseReservation Method");
-		return new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+		return new Reservation(0005, "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
 	}
 
 }

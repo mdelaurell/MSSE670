@@ -26,28 +26,12 @@ class ReservationSvcTest extends TestCase {
 		factory = new Factory();
 	}
 	
-	@Test
-	public void testTravelerRervation() {
-		try {
-			res = (IReservationSvc) factory.getService("IReservationSvc");
-			Reservation reserve =new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
 
-			res.TravelerReservation(reserve);
-		} catch (ServiceLoadException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			fail("ServiceLoadException");
-		}
-		catch (ReservationException e1) {
-			fail("Reservation Exception");
-		}	
-	}
-			
 	@Test
 	public void testGetReservation() {
 		try {
 			res = (IReservationSvc) factory.getService("IReservationSvc");
-			assertEquals(res.getReservation("00001").getReservationStatus(), "Pending");
+			assertEquals(res.getReservation(0005).getReservationStatus(), "Purchase");
 		} catch (ServiceLoadException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

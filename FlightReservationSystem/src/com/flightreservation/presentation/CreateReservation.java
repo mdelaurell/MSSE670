@@ -14,11 +14,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Random;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
@@ -126,6 +128,8 @@ public class CreateReservation extends JFrame {
 		contentPane.add(lblDate);
 		
 		DateTimePicker dateTimePicker = new DateTimePicker();
+		dateTimePicker.getTimePicker().getComponentTimeTextField().setText("Time");
+		dateTimePicker.getDatePicker().getComponentDateTextField().setText("Pick a Date");
 		dateTimePicker.setBounds(63, 85, 367, 29);
 		contentPane.add(dateTimePicker);
 		
@@ -177,11 +181,25 @@ public class CreateReservation extends JFrame {
 					 public void actionPerformed(ActionEvent res)
 					 {
 						 try {
-								Factory factory = new Factory();
+								if (dateTimePicker.datePicker.getText().isEmpty()) {
+									JOptionPane.showMessageDialog(rootPane, "Please choose a date.");
+								}
+								else if (dateTimePicker.timePicker.getText().isEmpty()) {
+									JOptionPane.showMessageDialog(rootPane, "Please choose a time.");
+								}
+								else			
+								{
+							 
+							 	Factory factory = new Factory();
 								Reservation reserveIt;
 								ReservationMgr resMgr = new ReservationMgr();
-								String id;
+								int id;
 								
+								Random rand = new Random();
+								
+								int upperbound = 1000000;
+								int int_randome = rand.nextInt(upperbound);
+								System.out.println(int_randome);
 
 								//System.out.println(dateTimePicker.getTimePicker());
 								String strMainTime = dateTimePicker.getTimePicker().toString();
@@ -191,12 +209,12 @@ public class CreateReservation extends JFrame {
 								int newHours = hours + 10;
 								int newMinutes = minutes + 25; 
 								String newArrivalTime = newHours + ":" + newMinutes;
-								DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm");
+								DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyy/MM/dd");
 								LocalDateTime now = LocalDateTime.now();
-								String currentTime = dtf.format(now).toString();
+								String currentDate = dtf.format(now).toString();
 						
-								reserveIt = new Reservation("00001",
-															currentTime,
+								reserveIt = new Reservation(int_randome,
+															currentDate,
 															statusComboBox.getSelectedItem().toString(), 
 															departureAirport1comboBox.getSelectedItem().toString(), 
 															departureAirport2comboBox.getSelectedItem().toString(), 
@@ -211,7 +229,10 @@ public class CreateReservation extends JFrame {
 															 statusComboBox.getSelectedItem().toString());
 								 
 								resMgr.create(reserveIt);
-								
+								FlightReservation flightRes = new FlightReservation();
+								flightRes.setVisible(true);
+								setVisible(false);
+								}
 							} catch (ServiceLoadException sle) {
 								// TODO Auto-generated catch block
 								sle.printStackTrace();

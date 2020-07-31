@@ -21,7 +21,7 @@ public class ReservationMgr {
 	return true;
 	}
 	
-	public Reservation get(String id) throws ServiceLoadException {
+	public Reservation get(int id) throws ServiceLoadException {
 		Factory factory = Factory.getInstance();
 		IAirportSvc airportSvc = (IAirportSvc)factory.getService(IAirportSvc.NAME);
 		return reservation;

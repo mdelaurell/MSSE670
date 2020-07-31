@@ -14,7 +14,7 @@ class ReservationMgrTest extends TestCase {
 	private Factory factory;
 	private Reservation res;
 	private ReservationMgr resMgr;
-	private String id;
+	private int id;
 
 	
 	
@@ -23,10 +23,10 @@ class ReservationMgrTest extends TestCase {
 		super.setUp();
 		factory = new Factory();
 		
-		res = new Reservation("00001", "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
+		res = new Reservation(0001, "29/03/2020", "Pending", "Devner International Airport","London Gatwick Airport","London Gatwick Airport","Edinburgh Airport","United Airlines", "British Airways","23-APR-2020", "15:00", "24-APR-2020", "06:30", "Not Purchased");
 
 		
-		id = res.getReservationNumber();
+		//id = res.getReservationNumber();
 		
 	}
 

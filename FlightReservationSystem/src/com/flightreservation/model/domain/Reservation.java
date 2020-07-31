@@ -12,7 +12,7 @@ public class Reservation implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 4399034892059544985L;
-	private String reservationNumber;
+	private int reservationNumber;
 	private String reservationDate;
 	private String reservationStatus;
 	private String departureAirport1;
@@ -69,7 +69,7 @@ public class Reservation implements Serializable {
 	}*/
 	
 	public Reservation(
-			String reservationNumber, 
+			int reservationNumber, 
 			String reservationDate,
 			String reservationStatus,
 			String departureAirport1,
@@ -111,14 +111,14 @@ public class Reservation implements Serializable {
 	/**
 	 * @return the reservationNumer
 	 */
-	public String getReservationNumber() {
+	public int getReservationNumber() {
 		return reservationNumber;
 	}
 	/**
 	 * @param reservationNumer
 	 * 			set the reservationNumer
 	 */
-	public void setReservationNumber(String reservationNumer) {
+	public void setReservationNumber(int reservationNumer) {
 		this.reservationNumber = reservationNumer;
 	}
 	
@@ -334,20 +334,19 @@ public class Reservation implements Serializable {
 	@Override
 	public String toString() {
 		if (departureAirport2 != null) {
-		return "Reservation [reservationDate=" + reservationDate + 
-							", reservationStatus=" + reservationStatus + 
-							", departureAirport1=" + departureAirport1 + 
-							", departureAirport2=" + departureAirport2 + 
-							", arrivalAirport1=" + arrivalAirport1 + 
-							", arrivalAirport2=" + arrivalAirport2 + 
-							", airline1=" + airline1 + 
-							", airline2=" + airline2 + 
-							", departureDate=" + departureDate + 
-							", departureTime=" + departureTime + 
-							", arrivalDate=" + arrivalDate + 
-							", arrivalTime=" + arrivalTime + 
-							", bookingStatus=" + bookingStatus + 
-							"]";
+		return 		reservationDate + 
+				"," + reservationStatus +
+				"," + departureDate + 
+				"," + departureTime + 
+				"," + departureAirport1 + 
+				"," + arrivalAirport1 + 
+				"," + airline1 + 
+				"," + departureAirport2 + 
+				"," + arrivalAirport2 + 
+				"," + airline2 + 
+				"," + arrivalDate + 
+				"," + arrivalTime + 
+				"," + bookingStatus;
 		} else {
 			return "Reservation [reservationDate=" + reservationDate + 
 					", reservationStatus=" + reservationStatus + 
@@ -358,8 +357,7 @@ public class Reservation implements Serializable {
 					", departureTime=" + departureTime + 
 					", arrivalDate=" + arrivalDate + 
 					", arrivalTime=" + arrivalTime + 
-					", bookingStatus=" + bookingStatus + 
-					"]";
+					", bookingStatus=" + bookingStatus;
 		}	
 		
 	}
