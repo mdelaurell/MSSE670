@@ -7,6 +7,7 @@ import java.awt.EventQueue;
 import java.awt.Label;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -184,8 +185,8 @@ public class CreateReservation extends JFrame {
 								if (dateTimePicker.datePicker.getText().isEmpty()) {
 									JOptionPane.showMessageDialog(rootPane, "Please choose a date.");
 								}
-								else if (dateTimePicker.timePicker.getText().isEmpty()) {
-									JOptionPane.showMessageDialog(rootPane, "Please choose a time.");
+								if (dateTimePicker.timePicker.getText().isEmpty()) {
+										JOptionPane.showMessageDialog(rootPane, "Please choose a time.");
 								}
 								else			
 								{
@@ -240,6 +241,9 @@ public class CreateReservation extends JFrame {
 							} catch (ReservationException e) {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
 							}	
 					 }
 				 }
@@ -253,17 +257,4 @@ public class CreateReservation extends JFrame {
 }
 
 
-/* 							System.out.println(currentTime);
-								System.out.println(statusComboBox.getSelectedItem().toString());
-								System.out.println(departureAirport1comboBox.getSelectedItem().toString());
-								System.out.println(departureAirport2comboBox.getSelectedItem().toString());
-								System.out.println(arrivalAirport1comboBox.getSelectedItem().toString());
-								System.out.println(arrivalAirport2comboBox.getSelectedItem().toString());
-								System.out.println(Airline1comboBox.getSelectedItem().toString());
-								System.out.println(Airline2comboBox.getSelectedItem().toString());
-								System.out.println(dateTimePicker.getDatePicker().getText());
-								System.out.println(dateTimePicker.getTimePicker().getText());
-								System.out.println(newArrivalTime);
-								System.out.println(newArrivalTime);
-								System.out.println(statusComboBox.getSelectedItem().toString());
-								*/
+

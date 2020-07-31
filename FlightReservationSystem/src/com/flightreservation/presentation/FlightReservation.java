@@ -3,9 +3,19 @@ package com.flightreservation.presentation;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.table.DefaultTableModel;
+
+import com.flighreservation.model.utilities.ReservationList;
+import com.flightreservation.model.domain.Reservation;
+
 import javax.swing.JTextArea;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.awt.event.ActionEvent;
 
 public class FlightReservation extends JDialog {
@@ -31,10 +41,64 @@ public class FlightReservation extends JDialog {
 		}
 	}
 
+	
+	public String getReservations() throws IOException {
+		File newFile = new File("ReservationData.out");
+		String[] reservations = new String[10];
+		String text, resString = "";
+		FileInputStream fin = new FileInputStream(newFile);
+	    ObjectInputStream inputStream = new ObjectInputStream(fin);
+
+	    Object obj = null;
+	    
+		try {
+	    System.out.println("help me!!!");	
+	    int i = 0;
+	    while ((obj = inputStream.readObject()) != null) {
+	      if (obj instanceof Reservation) {
+	        //System.out.println(((Reservation) obj).toString());
+	        text = obj.toString();
+	        System.out.println(i);
+	        reservations[i] = text;
+	        i++;
+	      }else {
+	    	  System.out.println("not obj Reservation");
+	      } 
+	    }
+	    
+	    
+	    fin.close();
+		inputStream.close();
+			
+					
+		}catch (EOFException eof) {
+			System.out.println("");
+			System.out.println("End of File Reached.");
+			//System.out.println(reservations.length);
+			for(int j=0; j < reservations.length; j++) {
+				if (reservations[j] == null) {
+					break;
+				}
+				System.out.println(reservations[j]);
+				resString = resString + reservations[j] + "\n";
+			};
+		}
+	    catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    finally {
+	    	return resString;
+	    }
+	}
 	/**
 	 * Create the dialog.
+	 * @throws IOException 
 	 */
-	public FlightReservation() {
+	public FlightReservation() throws IOException {
 		setResizable(true);
 		setSize(805, 410);
 		setTitle("Your Flight Reservations");
@@ -48,6 +112,7 @@ public class FlightReservation extends JDialog {
 		textArea.setEditable(false);
 		textArea.setBounds(16, 34, 775, 293);
 		getContentPane().add(textArea);
+		textArea.setText(getReservations());
 		
 		JButton btnAddRes = new JButton("Create Reservation");
 		btnAddRes.setBounds(534, 349, 155, 29);
